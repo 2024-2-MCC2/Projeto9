@@ -61,7 +61,7 @@ A função de estoque foi modelada para calcular o ponto em que o estoque atinge
 ### 📄 Documentação
 
 - Os arquivos anexados`README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e a modelagem do Banco de Dados, além do SQL.
-- Os arquivos da resolução em `.docx` está incluído no repositório e contém o desenvolvimento matemático completo, a modelagem do Banco de Dados, SQL e Cálculo II onde as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
+- Os arquivos da resolução em `.docx` e `.pdf` está incluído no repositório e contém o desenvolvimento matemático completo, a modelagem do Banco de Dados, SQL e Cálculo II onde as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
 
 ### 💡 Objetivo
 
