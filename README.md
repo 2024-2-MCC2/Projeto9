@@ -61,7 +61,7 @@ A função de estoque foi modelada para calcular o ponto em que o estoque atinge
 
 ### 📄 Documentação
 
-- O arquivo `README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e as previsões obtidas para o gerenciamento do estoque.
+- Os arquivos `README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e as previsões obtidas para o gerenciamento do estoque, o SQL.
 - O arquivo da resolução em `.docx` está incluído no repositório e contém o desenvolvimento matemático completo, explicando a modelagem da função de estoque, as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
 
 ### 💡 Objetivo
