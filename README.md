@@ -1,17 +1,21 @@
 
 # FECAP - Fundação de Comércio Álvares Penteado
 
+<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
+</p>
+
+# Protege
+# Grupo - 9
+
+## Integrantes: <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc%2BtlfaxRQ3aiwqAvz3gOPA%3D%3D">Nicolly da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blp3zpBvDRYmqlDT9zx2VWQ%3D%3D">Stephany Aliyah</a>, <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIdK6fZt5S5uRHZkgOKY8GQ%3D%3D">Hellen Caroline Batista silva Silva</a>, Nicolas Roberto Jordan Morales</a>, Nicolas Soeiro</a>
+
+
+## Professores Orientadores: <a href="linkedin.com/in/dolemes">Prof. David de Oliveira Lemes</a>, <a href="[https://www.linkedin.com/in/victorbarq/](https://github.com/2024-2-MCC2/Projeto9/edit/main/README.md)">Victor Rosseti Quiroz</a>, <a href="[https://www.linkedin.com/in/victorbarq/](https://github.com/2024-2-MCC2/Projeto9/edit/main/README.md)">Renata Muniz Do Nascimento<a/>, href="[https://www.linkedin.com/in/victorbarq/](https://github.com/2024-2-MCC2/Projeto9/edit/main/README.md)">Prof. Katia Milani Lara Bossi</a>, <a href="[https://www.linkedin.com/in/victorbarq/](https://github.com/2024-2-MCC2/Projeto9/edit/main/README.md)">Francisco De Souza Escobaro</a>
+
 <p align="center">
 <img src="[![Screenshot_20241001-174121](https://github.com/user-attachments/assets/1237d0dc-556b-4982-9a34-c275ed33f7ea)](https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true)" alt="Projeto protege - Logo da instituição Protege" border="0"></a>
 </p>
 
-# Projeto Protege
-
-## Grupo - 9
-
-## Integrantes: <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc%2BtlfaxRQ3aiwqAvz3gOPA%3D%3D">Nicolly Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blp3zpBvDRYmqlDT9zx2VWQ%3D%3D">Stephany Aliyah</a>, <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIdK6fZt5S5uRHZkgOKY8GQ%3D%3D">Hellen Silva</a>, Nicolas Soares</a>, Nicolas Soeiro</a>
-
-## Professores Orientadores: Katia Milani</a>, Francisco</a>, David Lemes</a>
 
 ## Descrição
 #Projeto protege
