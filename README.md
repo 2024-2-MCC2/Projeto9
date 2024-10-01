@@ -1,14 +1,12 @@
 # Projeto9
 
-
-
 ### Banco de Dados📊
 
-Introdução à Banco de Dados
+**Introdução à Banco de Dados**
 
 Escolhemos o SGBD (Sistema Gerenciador de Banco de Dados), MySQL pela sua interface simples e consideravelmente intuitiva, além de poder usar o MySQL Workbench para facilitar e administrar a visualização conforme os dados são adicionados. O MySQL suporta vários tipos de dados, o que o torna flexível para trabalhar. Temos uma ampla documentação do MySQL disponível para consultas e diversos fóruns ativos para nos ajudar a trabalhar cada vez melhor com essa ferramenta. O MySQL pode ser acessado em várias plataformas como, Windows e Linux, além de ser um código aberto, e ter sua disponibilidade gratuita.
 
-SQL - PROJETO
+**SQL - PROJETO**
 No workbench, aplicamos a tabela de cadastro do usuário, a tabela de doações financeiras que o usuário poderia realizar, e adicionamos a tabela de estoque da Instituição.
 
 create database projeto;
@@ -59,10 +57,11 @@ A função de estoque foi modelada para calcular o ponto em que o estoque atinge
 
 
 
+
 ### 📄 Documentação
 
-- Os arquivos `README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e as previsões obtidas para o gerenciamento do estoque, o SQL.
-- O arquivo da resolução em `.docx` está incluído no repositório e contém o desenvolvimento matemático completo, explicando a modelagem da função de estoque, as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
+- Os arquivos anexados`README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e a modelagem do Banco de Dados, além do SQL.
+- Os arquivos da resolução em `.docx` está incluído no repositório e contém o desenvolvimento matemático completo, a modelagem do Banco de Dados, SQL e Cálculo II onde as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
 
 ### 💡 Objetivo
 
