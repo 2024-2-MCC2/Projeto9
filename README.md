@@ -1,5 +1,12 @@
 # Projeto9
-Projeto 9
+
+## Planejamento-de-Estoque
+
+Este projeto tem como objetivo realizar um **planejamento eficiente do estoque de alimentos** na **Associação PROTEGE**, uma organização sem fins lucrativos que atende crianças em situação de vulnerabilidade social. A associação é responsável por garantir a alimentação de 35 crianças, o que exige uma gestão eficaz do estoque de alimentos, considerando o consumo diário e as doações recebidas semanalmente. O projeto busca prever, o comportamento do estoque ao longo do tempo, visando evitar escassez e garantir o fornecimento contínuo de alimentos para essas crianças.
+
+
+### Banco de Dados📊
+
 
 Introdução à Banco de Dados
 
@@ -45,3 +52,25 @@ foreign key (id_user) references users (id_user)
 );
 
 select * from donate;
+
+
+### Cálculo II📊
+
+A função de estoque foi modelada para calcular o ponto em que o estoque atinge seu valor máximo e, posteriormente, determinar quando ele será completamente esgotado. Esses cálculos são essenciais para a gestão eficiente de recursos, permitindo uma melhor tomada de decisão em relação à reposição de alimentos e planejamento de doações futuras.
+
+
+### Desenvolvimento Web Full Stack 📊
+
+
+
+### 📄 Documentação
+
+- O arquivo `README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e as previsões obtidas para o gerenciamento do estoque.
+- O arquivo da resolução em `.docx` está incluído no repositório e contém o desenvolvimento matemático completo, explicando a modelagem da função de estoque, as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
+
+### 💡 Objetivo
+
+O projeto foi desenvolvido para ajudar a **Associação PROTEGE** monitorar e otimizar o uso de seu estoque de alimentos, garantindo que as crianças sob sua responsabilidade não fiquem sem alimentação e, ao mesmo tempo, gerenciando de maneira eficiente os recursos disponíveis.
+
+
+
