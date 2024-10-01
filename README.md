@@ -1,12 +1,8 @@
 # Projeto9
 
-## Planejamento-de-Estoque
-
-Este projeto tem como objetivo realizar um **planejamento eficiente do estoque de alimentos** na **Associação PROTEGE**, uma organização sem fins lucrativos que atende crianças em situação de vulnerabilidade social. A associação é responsável por garantir a alimentação de 35 crianças, o que exige uma gestão eficaz do estoque de alimentos, considerando o consumo diário e as doações recebidas semanalmente. O projeto busca prever, o comportamento do estoque ao longo do tempo, visando evitar escassez e garantir o fornecimento contínuo de alimentos para essas crianças.
 
 
 ### Banco de Dados📊
-
 
 Introdução à Banco de Dados
 
