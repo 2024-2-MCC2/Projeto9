@@ -192,7 +192,8 @@ A função de estoque foi modelada para calcular o ponto em que o estoque atinge
 
 ### 💡 Objetivo
 
-O projeto foi desenvolvido para ajudar a **Associação PROTEGE** monitorar e otimizar o uso de seu estoque de alimentos, garantindo que as crianças sob sua responsabilidade não fiquem sem alimentação e, ao mesmo tempo, gerenciando de maneira eficiente os recursos disponíveis.
+O projeto foi desenvolvido para ajudar a **Associação PROTEGE** a melhorar a gestão e o acompanhamento das atividades que realizam em prol das crianças e adolescentes em situação de vulnerabilidade. O principal objetivo é proporcionar à organização uma plataforma digital que facilite a **gestão de informações**.
 
+Com o site, a **Associação PROTEGE** poderá gerenciar melhor suas ações diárias, como as oficinas educacionais e recreativas, as atividades produtivas (como a criação de coelhos da raça Cui e as plantações), e o acompanhamento do desenvolvimento das crianças. Além disso, o sistema permitirá um **controle mais organizado** das doações recebidas e dos projetos em andamento.
 
-
+Essa ferramenta digital será essencial para otimizar o tempo da equipe e garantir que todas as ações da associação estejam alinhadas com seus valores de **amor, proteção e cuidado**, proporcionando um futuro mais seguro e digno para as crianças e adolescentes.
