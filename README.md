@@ -11,8 +11,15 @@
 
 ## Integrantes: <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc%2BtlfaxRQ3aiwqAvz3gOPA%3D%3D">Nicolly Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blp3zpBvDRYmqlDT9zx2VWQ%3D%3D">Stephany Aliyah</a>, <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIdK6fZt5S5uRHZkgOKY8GQ%3D%3D">Hellen Silva</a>, Nicolas Soares</a>, Nicolas Soeiro</a>
 
-## Professores Orientadores: Katia Milani</a>, Francisco</a>, David</a>
+## Professores Orientadores: Katia Milani</a>, Francisco</a>, David Lemes</a>
+
 ## Descrição
+Projeto Protege - site by Grupo 9
+
+Nosso projeto é um site de divulgação de uma Instituição localizada na Bolívia, essa Instituição acolhe crianças e jovens de 0 a 18 anos que moram nas ruas, fornecendo melhores condições de viver, e para ajudar essa Instituição, precisamos divulga-la. 
+Em nosso site é possível realizar doações financeiras, entrar em contato com a Instituição para levar doações como roupas, sapatos, brinquedos e aparelhos eletrônicos, e disponibilizar do próprio tempo para ajudar essas crianças e jovens, sendo voluntário. A longo prazo essa Instituição vai conseguir viver de forma autossustentável, cuidando de animais como galinhas e vacas, para consumo próprio de suas procuções como leite e ovos e comercializando para gerar renda. 
+
+Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições de viver com dignidade.
 
 
 
