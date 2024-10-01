@@ -6,6 +6,7 @@ Introdução à Banco de Dados
 Escolhemos o SGBD (Sistema Gerenciador de Banco de Dados), MySQL pela sua interface simples e consideravelmente intuitiva, além de poder usar o MySQL Workbench para facilitar e administrar a visualização conforme os dados são adicionados. O MySQL suporta vários tipos de dados, o que o torna flexível para trabalhar. Temos uma ampla documentação do MySQL disponível para consultas e diversos fóruns ativos para nos ajudar a trabalhar cada vez melhor com essa ferramenta. O MySQL pode ser acessado em várias plataformas como, Windows e Linux, além de ser um código aberto, e ter sua disponibilidade gratuita.
 
 SQL - PROJETO
+No workbench, aplicamos a tabela de cadastro do usuário, a tabela de doações financeiras que o usuário poderia realizar, e adicionamos a tabela de estoque da Instituição.
 
 create database projeto;
 use projeto;
