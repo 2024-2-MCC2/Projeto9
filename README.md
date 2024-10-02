@@ -19,11 +19,11 @@
   Logo by <a href="http://www.nyphotographic.com/">Grupo - 9</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Nosso projeto iniciou com a necessidade de ajudar uma instituição localizada na Bolívia. A instituição Protege é um lugar onde acolhe jovens e crianças de 0 a 18 anos, que se encontram em estado vulnerável, morando nas ruas. Para ajudar essa instutuição, decidimos criar um site para divulgar o trabalho deles, informar como a população mundial pode ajuda-los e realizar doações financeiras.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+Com base nas ODS 2 e 4, que tem como objetivos erradicar a fome e educação de qualidade, criamos um site onde é possível realizar doações financeiras, entrar em contato com a Instituição para levar doações como roupas, sapatos, brinquedos e aparelhos eletrônicos, e disponibilizar do próprio tempo para ajudar essas crianças e jovens, sendo voluntário na instituição. A longo prazo essa Instituição vai conseguir viver de forma autossustentável, cuidando de animais como galinhas e vacas, para consumo próprio de suas produções como leite e ovos e comercializando para gerar renda. Mas para alcançar esse objetivo de autossustentabilidade, é necessário que divulguemos para que mais pessoas possam ajudar. 
 <br><br>
-May the force be with you!
+Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições de viver com dignidade.
 <br><br>
 
 ## 🛠 Estrutura de pastas
