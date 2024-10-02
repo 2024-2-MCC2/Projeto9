@@ -1,7 +1,7 @@
 
 # FECAP - Fundação de Comércio Álvares Penteado
 
-<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a><p align="center">
+<p align="center"><a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 
 </p>
 
@@ -13,23 +13,12 @@
 
 ## Professores Orientadores: <a href="linkedin.com/in/dolemes"> David de Oliveira Lemes</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Victor Rosseti Quiroz</a>, <a href="https://github.com/2024-2-MCC2/Projeto9"> Renata Muniz do Nascimento</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Katia Milani Lara Bossi</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Francisco De Souza Escobaro</a>
 
-<p align="center">
-<img src="[![Screenshot_20241001-174121](https://github.com/user-attachments/assets/1237d0dc-556b-4982-9a34-c275ed33f7ea)](https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true)" alt="Projeto protege - Logo da instituição Protege" border="0"></a>
-</p>
-
-
 ## Descrição
-#Projeto protege
-
 <p align="center">
 <img src="[![Screenshot_20241001-174121](https://github.com/user-attachments/assets/1237d0dc-556b-4982-9a34-c275ed33f7ea)](https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true)" alt="Projeto protege - Logo da instituição Protege" border="0"></a>
 </p>
 
-
-
-
-
-Projeto Protege - site realizado pelo Grupo 9
+#Projeto protege
 
 Nosso projeto é um site de divulgação de uma Instituição localizada na Bolívia, essa Instituição acolhe crianças e jovens de 0 a 18 anos que moram nas ruas, fornecendo melhores condições de viver, e para ajudar essa Instituição, precisamos divulga-la. 
 Em nosso site é possível realizar doações financeiras, entrar em contato com a Instituição para levar doações como roupas, sapatos, brinquedos e aparelhos eletrônicos, e disponibilizar do próprio tempo para ajudar essas crianças e jovens, sendo voluntário. A longo prazo essa Instituição vai conseguir viver de forma autossustentável, cuidando de animais como galinhas e vacas, para consumo próprio de suas produções como leite e ovos e comercializando para gerar renda. 
