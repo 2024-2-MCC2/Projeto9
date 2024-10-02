@@ -46,6 +46,8 @@ Coloque código do prompt de comnando se for necessário
 
 ## 📋 Licença/License
 
+ <a href="https://github.com/2024-2-MCC2/Projeto9">Grupo - 9</a>, <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Soares</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah</a>
+
 
 ## 🎓 Referências
 
