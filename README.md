@@ -154,7 +154,7 @@ Utilizamos React e HTML para desenvolver o site, aproveitando a flexibilidade do
 ### Programação Web 📱 
 
 O protótipo foi realizado no **Figma** foi desenvolvido para simular a interface do site da **Associação PROTEGE**, permitindo uma visão clara de como as páginas e funcionalidades serão organizadas. Através do protótipo, é possível navegar entre as telas, visualizar a disposição dos elementos e testar a usabilidade do sistema antes do desenvolvimento final. 
-<p> O design do Figma foi anexado do link a seguir:
+<p> O protótipo do site foi anexado no link a seguir:
 
 
 
