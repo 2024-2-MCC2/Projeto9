@@ -92,7 +92,8 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<Visual studio Code</a>
+-<https://code.visualstudio.com/>Visual Studio Code</a>
+
 
 ```sh
 make install
