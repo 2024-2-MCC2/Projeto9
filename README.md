@@ -30,25 +30,9 @@ Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições d
 1. <a href="https://www.figma.com/design/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=0-1&node-type=canvas&t=o9XOw5QIrIc1j9jX-0">Figma</a>
 2.  <a href="https://www.figma.com/proto/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=19-17&node-type=canvas&t=o9XOw5QIrIc1j9jX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=19%3A17&show-proto-sidebar=1">Figma</a>
 
-## 🛠 Instalação
-
-Não há instalação! Apenas executável!
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
-
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
 Para abrir este projeto você necessita das seguintes ferramentas:
-
 1.<a href="https://code.visualstudio.com/">Visual Studio Code</a> <br>
 2.<a href="https://nodejs.org/pt">Node-Js</a>
 
