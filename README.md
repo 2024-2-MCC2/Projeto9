@@ -28,8 +28,8 @@ Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições d
 
 ## Protótipo navegável no Figma
 <p align="center">
-<a href= "https://www.figma.com/proto/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=19-17&node-type=canvas&t=o9XOw5QIrIc1j9jX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=19%3A17&show-proto-sidebar=1"
-</a>
+<a href= "https://www.figma.com/proto/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=19-17&node-type=canvas&t=o9XOw5QIrIc1j9jX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=19%3A17&show-proto-sidebar=1"</a>
+  </p>
 
 
 ## 🛠 Estrutura de pastas
