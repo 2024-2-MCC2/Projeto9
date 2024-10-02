@@ -8,7 +8,7 @@ import Background from './components/Background';  // Certifique-se de que o nom
 function App() {
   return (
     <div>
-      <Background />  {/* Coloca o background por trás do conteúdo */}
+      <Background />
       <Header /> 
       <Routes>
         <Route path="/" element={<TelaPrincipal />} />

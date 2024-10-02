@@ -6,6 +6,7 @@ import Rodape from '../components/Rodape';
 import OQuefazemos from '../components/OQueFazemos';
 import QuemSomos from '../components/QuemSomos';
 import CarouselCriancas from '../components/CarouselCriancas';
+import SecaoAjuda from '../components/SecaoAjuda'
 
 function TelaPrincipal() {
   return (
@@ -15,14 +16,14 @@ function TelaPrincipal() {
         <CarouselContainer>
           <CarouselCriancas />
         </CarouselContainer>
-
         {/* Botões principais */}
         <ButtonsContainer>
           <BotaoAjuda as="a" href="#Quem-Somos">Quem Somos</BotaoAjuda> {/* Sem redirecionamento */}
           <BotaoAjuda as={Link} to="/donation">Doe Agora</BotaoAjuda> {/* Redirecionamento para a página de doação */}
           <BotaoAjuda as="a" href="#oque-fazemos">O que Fazemos</BotaoAjuda> {/* Rolagem suave para a seção "O que Fazemos" */}
         </ButtonsContainer>
-
+        {/* Seção Ajuda */}
+        <SecaoAjuda />
         {/* Seção informativa */}
         <SecaoInfo>
           <Carrossel />

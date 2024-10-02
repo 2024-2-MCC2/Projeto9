@@ -26,16 +26,6 @@ function SecaoAjuda() {
           <BotaoAjuda as={Link} to="/donation">Seja um Voluntário</BotaoAjuda> {/* Botão para a página de doação */}
         </CaixaAjuda>
       </WrapperDescricao>
-
-      {/* Seção do "Você Sabia?" */}
-      <CaixaVoceSabia> 
-        <TextoVoceSabia>
-          <h3>Você sabia que essas crianças não têm sapatos para irem à escola?</h3>
-          <p>Muitas vezes, elas caminham longas distâncias descalças ou com sapatos desgastados.</p>
-          <p>Você pode ajudar doando calçados ou contribuindo para campanhas que garantem a essas crianças o básico para poderem ir à escola com dignidade e segurança.</p>
-        </TextoVoceSabia>
-        <ImagemSapato src="/images/sapato-vermelho.png" alt="Sapato Vermelho" /> {/* Imagem do sapato */}
-      </CaixaVoceSabia>
     </ContainerSecao>
   );
 }
@@ -68,6 +58,7 @@ const CaixaAjuda = styled.div`
   border-radius: 10px;
   width: 45%;
   text-align: center;
+  border : 2px solid black
 `;
 
 const TituloAjuda = styled.h2`
@@ -76,28 +67,6 @@ const TituloAjuda = styled.h2`
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 10px;
-`;
-
-const CaixaVoceSabia = styled.div`
-  background-color: #f4f4f4;
-  padding: 30px;
-  border-radius: 10px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-`;
-
-const TextoVoceSabia = styled.div`
-  flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.7;
-`;
-
-const ImagemSapato = styled.img`
-  width: 150px;
-  margin-left: 20px;
 `;
 
 const BotaoAjuda = styled.button`
