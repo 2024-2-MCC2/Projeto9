@@ -8,7 +8,7 @@
 
 ## Grupo 9
 
-## Integrantes: <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline Batista Silva</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Roberto Jordan Soeiro</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah Guimarães Euripedes De Paula</a>
+## Integrantes: <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline Batista Silva</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Roberto Jordan Morales</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah Guimarães Euripedes De Paula</a>
 
 ## Professores Orientadores: <a href="https://github.com/2024-2-MCC2/Projeto9">David de Oliveira Lemes</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Francisco de Souza Escobaro</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Katia Milani Lara Bossi</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Renata Muniz do Nascimento</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Victor Rosetti Quiroz</a>
 
