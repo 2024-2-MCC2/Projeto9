@@ -62,14 +62,12 @@ const HeaderContainer = styled.div`
 `;
 
 const TextSection = styled.div`
-  display: center;  
-  flex-direction: center;  
+  display: flex;  
+  flex-direction: column;  
   justify-content: center;  
   text-align: center;  
   margin: 0 auto; 
-  padding: 0;
-  padding-right: 100px;
-
+  
   @media (max-width: 768px) {
     text-align: right;  
     margin-left: auto;
@@ -90,7 +88,7 @@ const LogoSection = styled.div`
   align-items: center;
   justify-content: flex-start; 
   // Logo e Menu ficam à esquerda 
-  margin: 0 20px 0px;
+  margin: 0 20px  10px;
 
   @media (max-width: 768px) {
     justify-content: flex-start; 
@@ -99,8 +97,8 @@ const LogoSection = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 100px;
-  width: 50px;
+  height: 70px;
+  width: 60px;
   margin-right: 10px;
   cursor: pointer;
 `;
@@ -118,9 +116,9 @@ const MenuButton = styled.button`
 const DropdownMenu = styled.div`
   position: absolute; 
   // Posiciona o menu dropdown sobre os outros itens
-  top: 80px;  
+  top: 60px;  
   // Espaçamento do topo
-  left: 20px;  
+  left: 10px;  
   // Posição do menu na horizontal
   background-color: #b36732; 
   width: 150px; 
