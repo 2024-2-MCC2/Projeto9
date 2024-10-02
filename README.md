@@ -85,7 +85,7 @@ A função de estoque foi modelada para calcular o ponto em que o estoque atinge
 
 ### Desenvolvimento Web Full Stack 📊
 
-
+Utilizamos React e HTML para desenvolver o site, aproveitando a flexibilidade do React para criar componentes dinâmicos e reutilizáveis, e a simplicidade do HTML para estruturar o conteúdo. Essa combinação garante uma navegação rápida e fácil, oferecendo uma experiência interativa para a equipe da Associação PROTEGE, voluntários e doadores.
 
 
 ### 📄 Documentação
