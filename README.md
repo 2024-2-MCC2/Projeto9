@@ -15,13 +15,8 @@
 
 ## Descrição
 <p align="center">
-    <a href="https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true" target="_blank">
-        <img src="https://raw.githubusercontent.com/2024-2-MCC2/Projeto9/main/Untitled%20design.png" alt="Projeto protege - Logo da instituição Protege" border="0">
-    </a>
-</p>
+ <img src="https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true" alt="Projeto protege - Logo da instituição Protege" border="0">
 
-
-</p>
 
 # Projeto Protege
 
