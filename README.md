@@ -30,37 +30,6 @@ Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições d
 1. <a href="https://www.figma.com/design/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=0-1&node-type=canvas&t=o9XOw5QIrIc1j9jX-0">Figma</a>
 2.  <a href="https://www.figma.com/proto/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=19-17&node-type=canvas&t=o9XOw5QIrIc1j9jX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=19%3A17&show-proto-sidebar=1">Figma</a>
 
-
-
--Raiz<br>
-|<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-  &emsp;|-->Backend<br>
-  &emsp;|-->Frontend<br>
-|readme.md<br>
-
-A pasta raiz contem dois arquivos que devem ser alterados:
-
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
-
-Há também 4 pastas que seguem da seguinte forma:
-
-<b>documentos</b>: Toda a documentação estará nesta pasta.
-
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
-
-<b>imagens</b>: Imagens do sistema
-
-<b>src</b>: Pasta que contém o código fonte.
-
 ## 🛠 Instalação
 
 Não há instalação! Apenas executável!
