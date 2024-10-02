@@ -17,10 +17,11 @@
 <p align="center">
 <img src="[![Screenshot_20241001-174121](https://github.com/user-attachments/assets/1237d0dc-556b-4982-9a34-c275ed33f7ea)](https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true)" alt="Projeto protege - Logo da instituição Protege" border="0"></a>
 
-<a href="https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true" target="_blank">
-    <img src="https://raw.githubusercontent.com/2024-2-MCC2/Projeto9/main/Untitled%20design.png" alt="Projeto protege - Logo da instituição Protege" border="0">
-</a>
-
+<p align="center">
+    <a href="https://github.com/2024-2-MCC2/Projeto9/blob/main/Untitled%20design.png?raw=true" target="_blank">
+        <img src="https://raw.githubusercontent.com/2024-2-MCC2/Projeto9/main/Untitled%20design.png" alt="Projeto protege - Logo da instituição Protege" border="0">
+    </a>
+</p>
 
 
 </p>
