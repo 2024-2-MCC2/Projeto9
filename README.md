@@ -1,31 +1,31 @@
-
 # FECAP - Fundação de Comércio Álvares Penteado
 
-<p align="center"><a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
-
+<p align="center">
+<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Protege
-# Grupo 9
+# Nome do Projeto
 
-## Integrantes: <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIdK6fZt5S5uRHZkgOKY8GQ%3D%3D">Hellen Caroline Batista Silva</a>,  <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Roberto Jordan Morales</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc%2BtlfaxRQ3aiwqAvz3gOPA%3D%3D">Nicolly da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blp3zpBvDRYmqlDT9zx2VWQ%3D%3D">Stephany Aliyah Guimarães Eurípedes De Paula</a>
+## Nome do Grupo
 
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
-## Professores Orientadores: <a href="linkedin.com/in/dolemes"> David de Oliveira Lemes</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Victor Rosseti Quiroz</a>, <a href="https://github.com/2024-2-MCC2/Projeto9"> Renata Muniz do Nascimento</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Katia Milani Lara Bossi</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Francisco De Souza Escobaro</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
 
 ## Descrição
+
 <p align="center">
-<img src="https://raw.githubusercontent.com/2024-2-MCC2/Projeto9/main/Untitled%20design.png" alt="Projeto protege - Logo da instituição Protege" border="0">
+<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+</p>
 
 
-
-# Projeto Protege
-
-Nosso projeto é um site de divulgação de uma Instituição localizada na Bolívia, essa Instituição acolhe crianças e jovens de 0 a 18 anos que moram nas ruas, fornecendo melhores condições de viver, e para ajudar essa Instituição, precisamos divulga-la. 
-Em nosso site é possível realizar doações financeiras, entrar em contato com a Instituição para levar doações como roupas, sapatos, brinquedos e aparelhos eletrônicos, e disponibilizar do próprio tempo para ajudar essas crianças e jovens, sendo voluntário. A longo prazo essa Instituição vai conseguir viver de forma autossustentável, cuidando de animais como galinhas e vacas, para consumo próprio de suas produções como leite e ovos e comercializando para gerar renda. 
-
-Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições de viver com dignidade.
-
+De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+<br><br>
+Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+<br><br>
+May the force be with you!
+<br><br>
 
 ## 🛠 Estrutura de pastas
 
@@ -60,9 +60,23 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
+<b>Android:</b>
+
+Faça o Download do JOGO.apk no seu celular.
+Execute o APK e siga as instruções de seu telefone.
+
+```sh
+Coloque código do prompt de comnando se for necessário
+```
+
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
+Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+
+```sh
+Coloque código do prompt de comnando se for necessário
+```
 
 <b>HTML:</b>
 
@@ -75,6 +89,7 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
+-<a href="https://godotengine.org/download">GODOT</a>
 
 ```sh
 make install
@@ -83,7 +98,7 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 📋 Licença/License
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2024-2-MCC2/Projeto9">PROTEGE</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/hellen-silva-87611b1b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIdK6fZt5S5uRHZkgOKY8GQ%3D%3D">Hellen Caroline Batista Silva</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Roberto Jordan Morales</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc%2BtlfaxRQ3aiwqAvz3gOPA%3D%3D">Nicolly da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blp3zpBvDRYmqlDT9zx2VWQ%3D%3D">Stephany Aliyah Guimarães Euripedes De Paula</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p> 
+
 
 ## 🎓 Referências
 
@@ -92,82 +107,5 @@ Aqui estão as referências usadas no projeto.
 1. <https://github.com/iuricode/readme-template>
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
-
-
-### Banco de Dados 🗄️ 
-
-**Introdução à Banco de Dados**
-
-Escolhemos o SGBD (Sistema Gerenciador de Banco de Dados), MySQL pela sua interface simples e consideravelmente intuitiva, além de poder usar o MySQL Workbench para facilitar e administrar a visualização conforme os dados são adicionados. O MySQL suporta vários tipos de dados, o que o torna flexível para trabalhar. Temos uma ampla documentação do MySQL disponível para consultas e diversos fóruns ativos para nos ajudar a trabalhar cada vez melhor com essa ferramenta. O MySQL pode ser acessado em várias plataformas como, Windows e Linux, além de ser um código aberto, e ter sua disponibilidade gratuita.
-
-**SQL** - PROJETO
-No workbench, aplicamos a tabela de cadastro do usuário, a tabela de doações financeiras que o usuário poderia realizar, e adicionamos a tabela de estoque da Instituição.
-
-create database projeto;
-use projeto;
-
-create table stock (
-id_adm int primary key,
-number_toys int,
-number_animals int,
-number_clothes int,
-number_shoes int
-);
-
-select * from stock;
-
-create table users (
-id_user INT auto_increment primary key,
-user_name varchar (50),
-email varchar (50),
-user_password varchar (50),
-number_phone varchar (50),
-address varchar (50),
-birth_date date,
-registration_date datetime default current_timestamp,
-status varchar (50)
-);
-
-select * from users;
-
-create table donate (
-id_donate int auto_increment primary key,
-id_user int,
-donate_date datetime,
-value decimal (10,2),
-description_donate text,
-foreign key (id_user) references users (id_user)
-);
-
-select * from donate;
-
-
-### Cálculo II📊
-
-A função de estoque foi modelada para calcular o ponto em que o estoque atinge seu valor máximo e, posteriormente, determinar quando ele será completamente esgotado. Esses cálculos são essenciais para a gestão eficiente de recursos, permitindo uma melhor tomada de decisão em relação à reposição de alimentos e planejamento de doações futuras.
-
-
-### Desenvolvimento Web Full Stack  💻 
-
-Utilizamos React e HTML para desenvolver o site, aproveitando a flexibilidade do React para criar componentes dinâmicos e reutilizáveis, e a simplicidade do HTML para estruturar o conteúdo. Essa combinação garante uma navegação rápida e fácil, oferecendo uma experiência interativa para a equipe da Associação PROTEGE, voluntários e doadores.
-
-### Programação Web 📱 
-
-O protótipo foi realizado no **Figma** foi desenvolvido para simular a interface do site da **Associação PROTEGE**, permitindo uma visão clara de como as páginas e funcionalidades serão organizadas. Através do protótipo, é possível navegar entre as telas, visualizar a disposição dos elementos e testar a usabilidade do sistema antes do desenvolvimento final. 
-<p> O protótipo do site foi anexado no link a seguir:
-
-
-
-
-### 📄 Documentação
-
-- Os arquivos anexados`README.md` contém detalhes sobre os cálculos realizados, explicações passo a passo, e a modelagem do Banco de Dados, além do SQL.
-- Os arquivos da resolução em `.docx` e `.pdf` estão inclusos no repositório e contém o desenvolvimento matemático completo, a modelagem do Banco de Dados, SQL e Cálculo II onde as derivadas utilizadas para encontrar os pontos críticos (máximo e mínimo), além de exemplos detalhados dos cálculos.
-
-### 💡 Objetivo
-
-O projeto foi desenvolvido para ajudar a **Associação PROTEGE** a melhorar a gestão e o acompanhamento das atividades que realizam em prol das crianças e adolescentes em situação de vulnerabilidade. O principal objetivo é proporcionar à organização uma plataforma digital que facilite a **gestão de informações**.
-
-Com o site, a **Associação PROTEGE** poderá gerenciar melhor suas ações diárias, como as oficinas educacionais e recreativas, as atividades produtivas (como a criação de coelhos da raça Cui e as plantações), e o acompanhamento do desenvolvimento das crianças. Além disso, o sistema permitirá um **controle mais organizado** das doações recebidas e dos projetos em andamento.
-
-Essa ferramenta digital será essencial para otimizar o tempo da equipe e garantir que todas as ações da associação estejam alinhadas com seus valores de **amor, proteção e cuidado**, proporcionando um futuro mais seguro e digno para as crianças e adolescentes.
+4. <https://freesound.org/>
+5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
