@@ -96,7 +96,7 @@ Aqui estão as referências usadas no projeto.
 5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
 
 
-### Banco de Dados📊
+### Banco de Dados 🗄️ 
 
 **Introdução à Banco de Dados**
 
@@ -149,7 +149,7 @@ select * from donate;
 A função de estoque foi modelada para calcular o ponto em que o estoque atinge seu valor máximo e, posteriormente, determinar quando ele será completamente esgotado. Esses cálculos são essenciais para a gestão eficiente de recursos, permitindo uma melhor tomada de decisão em relação à reposição de alimentos e planejamento de doações futuras.
 
 
-### Desenvolvimento Web Full Stack 📊
+### Desenvolvimento Web Full Stack  💻 
 
 Utilizamos React e HTML para desenvolver o site, aproveitando a flexibilidade do React para criar componentes dinâmicos e reutilizáveis, e a simplicidade do HTML para estruturar o conteúdo. Essa combinação garante uma navegação rápida e fácil, oferecendo uma experiência interativa para a equipe da Associação PROTEGE, voluntários e doadores.
 
