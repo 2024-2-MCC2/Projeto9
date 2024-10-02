@@ -151,6 +151,13 @@ A função de estoque foi modelada para calcular o ponto em que o estoque atinge
 
 Utilizamos React e HTML para desenvolver o site, aproveitando a flexibilidade do React para criar componentes dinâmicos e reutilizáveis, e a simplicidade do HTML para estruturar o conteúdo. Essa combinação garante uma navegação rápida e fácil, oferecendo uma experiência interativa para a equipe da Associação PROTEGE, voluntários e doadores.
 
+### Programação Web 📱 
+
+O protótipo foi realizado no **Figma** foi desenvolvido para simular a interface do site da **Associação PROTEGE**, permitindo uma visão clara de como as páginas e funcionalidades serão organizadas. Através do protótipo, é possível navegar entre as telas, visualizar a disposição dos elementos e testar a usabilidade do sistema antes do desenvolvimento final. 
+O design do Figma foi anexado do link a seguir:
+
+
+
 
 ### 📄 Documentação
 
