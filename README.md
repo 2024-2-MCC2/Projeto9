@@ -16,9 +16,8 @@
 
 <p align="center">
 <img src="https://github.com/2024-2-MCC2/Projeto9/blob/3f2461dfe65e19645bf46b8a92eaeb6901b1f647/imagens/Logo%20Protege.png" alt="Logo Protege" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+  Logo by <a href="http://www.nyphotographic.com/">Grupo - 9</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
-
 
 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
