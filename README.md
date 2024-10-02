@@ -33,6 +33,7 @@ Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições d
 ## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
+
 1.<a href="https://code.visualstudio.com/">Visual Studio Code</a> <br>
 2.<a href="https://nodejs.org/pt">Node-Js</a>
 
