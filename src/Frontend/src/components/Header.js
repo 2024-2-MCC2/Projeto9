@@ -3,97 +3,63 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const [isMenuOpen, setMenuOpen] = useState(false); // Lugar que Controla se o menu está aberto ou fechado. )
-  // começa fechado Inicialmente fechado useState(false)
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-  // Função que alterna o estado do menu
   function handleLogoClick() {
-    setMenuOpen(!isMenuOpen); // Inverte o valor de isMenuOpen : se estiver aberto, fecha; se estiver fechado, abre
+    setMenuOpen(!isMenuOpen);
   }
 
   return (
     <HeaderContainer>
+      {/* Logo e botão de menu à esquerda */}
       <LogoSection>
-        {/* Ao clicar na logo ou no botão de menu, chama a função que abre ou fecha o menu */}
         <Logo src="/images/Logo.png" onClick={handleLogoClick} />
-        <MenuButton onClick={handleLogoClick}>MENU</MenuButton> 
+        <MenuButton onClick={handleLogoClick}>MENU</MenuButton>
       </LogoSection>
 
-      <TextSection>
-        {/* Título e subtítulo do cabeçalho */}
-        <h3>Associação Protege</h3>
-        <p>Mãos que ajudam, transformam corações</p>
-      </TextSection>
-
-      {/* Se o menu estiver aberto (isMenuOpen for true), o dropdown aparece */}
+      {/* Dropdown para dispositivos móveis */}
       {isMenuOpen && (
         <DropdownMenu>
-          <DropdownItem as={Link} to="/donation">Doar Agora</DropdownItem>
           <DropdownItem as={Link} to="/">Tela Principal</DropdownItem>
+          <DropdownItem as={Link} to="/donation">Doar Agora</DropdownItem>
         </DropdownMenu>
       )}
+
+      {/* Seção central com imagem e botões */}
+      <CenterSection>
+        <NavLinks>
+          <NavLink as={Link} to="/donation">Doa Aqui</NavLink>
+          <NavLink as={Link} to="/voluntariado">Voluntariado</NavLink>
+          <Link to="/">
+  <ImagemLugar src="/images/SloganPROTEGE.png" alt="Imagem Central" />
+          </Link>
+          <NavLink as={Link} to="/localizacao  ">Calendário</NavLink>
+          <NavLink as={Link} to="/nossa-familia">Nossa Família</NavLink>
+        </NavLinks>
+      </CenterSection>
     </HeaderContainer>
   );
 }
 
 export default Header;
 
-  // Estilos com styled-components
-
 const HeaderContainer = styled.div`
   background-color: #b36732;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
   color: white;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;  
+  width: 100vw;
   z-index: 1000;
   padding: 10px;
-
-  @media (max-width: 768px) {
-    flex-direction: row;  
-  // Muda o layout para uma linha em telas pequenas 
-    justify-content: space-between; 
-  // Deixa logo e menu na esquerda e texto na direita 
-  }
-`;
-
-const TextSection = styled.div`
-  display: flex;  
-  flex-direction: column;  
-  justify-content: center;  
-  text-align: center;  
-  margin: 0 auto; 
-  
-  @media (max-width: 768px) {
-    text-align: right;  
-    margin-left: auto;
-  }
-
-  h3 {
-    font-size: 2rem;
-    margin: 0;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
 `;
 
 const LogoSection = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  // Logo e Menu ficam à esquerda 
-  margin: 0 20px  10px;
-
-  @media (max-width: 768px) {
-    justify-content: flex-start; 
-  // Mantém a logo e o menu à esquerda 
-  }
+  width: 25%;
 `;
 
 const Logo = styled.img`
@@ -111,37 +77,58 @@ const MenuButton = styled.button`
   font-size: 16px;
 `;
 
+const CenterSection = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+`;
 
+const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Alterado para space-around */
+  width: 100%;
+  max-width: 900px; /* Limita a largura total dos links */
+`;
 
+const NavLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #d49058;
+  }
+`;
+
+const ImagemLugar = styled.img`
+  width: 150px; /* Define uma largura fixa para a imagem */
+  height: auto;
+  cursor: pointer;
+`;
+
+// Definições para o dropdown e itens do menu
 const DropdownMenu = styled.div`
-  position: absolute; 
-  // Posiciona o menu dropdown sobre os outros itens
-  top: 60px;  
-  // Espaçamento do topo
-  left: 10px;  
-  // Posição do menu na horizontal
-  background-color: #b36732; 
-  width: 150px; 
-  // Largura fixa do menu
-  border: 1px solid black;  
-  border-radius: 5px;  
-  // Bordas arredondadas
-  z-index: 100; 
-  // Garante que o menu fique acima de outros elementos
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background-color: #b36732;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 100;
 `;
 
 const DropdownItem = styled(Link)`
-  display: block; 
-  padding: 10px;  
-  text-align: left;  
-  color: white; 
-  text-decoration: none;  
-  // Remove o sublinhado
-  cursor: pointer; 
-  // Cursor de "mão" ao passar sobre o item
+  display: block;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
 
   &:hover {
-    background-color: #d49058;  
-  // Muda a cor de fundo ao passar o mouse
+    background-color: #d49058;
   }
 `;

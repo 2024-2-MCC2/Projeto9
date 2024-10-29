@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 function QuemSomos() {
@@ -9,39 +10,52 @@ function QuemSomos() {
       </BarraSuperior>
 
       <Content>
-        <TextWrapper>
-          <IntroText>Somos a Associação PROTEGE!</IntroText>
-        </TextWrapper>
-        <TextSection>
-          <p>
-            A instituição trabalha com dedicação para mudar a realidade de crianças e adolescentes em
-            situação de vulnerabilidade. Surgimos para oferecer não apenas ajuda momentânea, mas sim soluções
-            duradouras que assegurem o bem-estar, o progresso e a dignidade dessas crianças. Inspirados pelo
-            exemplo do Lar Zapatito Roto, nosso propósito é criar um espaço acolhedor e sustentável, no qual
-            cada criança possa crescer com carinho, proteção e acesso aos recursos necessários para um futuro
-            de sucesso.
-          </p>
-          <p>
-            Asseguramos que os jovens se desenvolvam em um contexto seguro, favorecendo a aprendizagem, a
-            expressão e a preparação para a maturidade. Atuamos pautados pela empatia, solidariedade e
-            responsabilidade, cientes de que o afeto e a atenção conseguem mudar cenários. Desejamos que
-            todos os jovens tenham oportunidade de almejar e edificar um destino digno.
-          </p>
-        </TextSection>
+        <IntroText>
+          Somos a Associação PROTEGE!
+        </IntroText>
+
+        <DescriptionSection>
+          <LeftText>
+            <p>
+              A instituição trabalha com dedicação para transformar a vida de crianças e adolescentes em situação de vulnerabilidade. Nosso propósito vai além de oferecer assistência temporária, nós buscamos soluções duradouras que garantam o bem-estar, o desenvolvimento e a dignidade dessas crianças.
+            </p>
+            <p>
+              Uma das nossas maiores prioridades é garantir que cada criança sob nossos cuidados tenha acesso a uma alimentação adequada. Muitas chegam até nós em estado de subnutrição, sem acesso regular a refeições, impactando diretamente no seu crescimento físico, mental e emocional.
+            </p>
+          </LeftText>
+
+          <RightText>
+            <img src="/images/QuemSomos.png" alt="Imagem de crianças na instituição" />
+          </RightText>
+        </DescriptionSection>
 
         <ImagesWrapper>
-          <ImageSection>
-            <img src="/images/QuemSomos.png"/>
-          </ImageSection>
-          <ImageSection>
-            <img src="/images/QuemSomos2.png" />
-          </ImageSection>
+          <LeftImage>
+            <img src="/images/QuemSomos2.png" alt="Imagem de crianças recebendo ajuda" />
+          </LeftImage>
+
+          <RightTextBox>
+            <p>
+              Infelizmente, o cenário é desafiador. Mesmo com todos os nossos esforços, muitas vezes faltam recursos para garantir que cada criança receba as refeições necessárias para um desenvolvimento pleno.
+            </p>
+            <p>
+              No PROTEGE, estamos comprometidos em mudar essa realidade, oferecendo não apenas um espaço acolhedor e seguro, mas também refeições nutritivas que assegurem que cada criança possa crescer saudável e feliz.
+            </p>
+          </RightTextBox>
         </ImagesWrapper>
+
+        <FooterText>
+          <p>
+            Construímos um espaço acolhedor e seguro, mas também recebemos farturas de apoio em parcerias que ampliam as nossas ações. Com o apoio de todos, podemos transformar vidas e construir um futuro mais digno e justo para todos!
+          </p>
+          <p>
+            Ajude-nos a garantir que nenhuma criança sofra com a fome. Com o seu apoio, podemos transformar vidas e construir um futuro mais digno e justo para todos!
+          </p>
+        </FooterText>
       </Content>
 
       <SaibaMaisSection>
-        <a href="#">Saiba mais</a> 
-        {/* quando for criado a nova pagina será direcionado a ela ex:(#SaibaMaisQuemSomos) */}
+        <Link to="/quem-somos-detalhes">Saiba mais</Link>
       </SaibaMaisSection>
     </Container>
   );
@@ -49,20 +63,20 @@ function QuemSomos() {
 
 export default QuemSomos;
 
-// Estilos com responsividade
+// Estilos com styled-components
 const Container = styled.div`
   border-radius: 10px;
   padding: 20px;
   margin-top: 40px;
+  background-color: transparent;
 `;
 
-// Barra superior laranja com título
 const BarraSuperior = styled.div`
   background-color: #b36732;
   padding: 15px;
   border-radius: 10px 10px 10px 10px;
   text-align: center;
-  max-width: 100%; 
+  max-width: 100%;
 `;
 
 const TituloBarra = styled.h2`
@@ -74,28 +88,95 @@ const TituloBarra = styled.h2`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-const TextWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 15px;
+  gap: 20px;
 `;
 
 const IntroText = styled.h3`
+  text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 15px;
   margin-top: 15px;
 `;
 
-const TextSection = styled.div`
+const DescriptionSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+
+const LeftText = styled.div`
   flex: 1;
   padding: 20px;
   text-align: left;
   background-color: #f4f4f4;
   border-radius: 10px;
-  border: 2px solid black; 
-  //black já pega no codigo, más podemos colocar outra cor colocando solid rgb (0,0,0) como o professor falou para importar cores aqui também pega.
+  border: 2px solid black;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+`;
+
+const RightText = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+  }
+`;
+
+const ImagesWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+
+const LeftImage = styled.div`
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto; /* Garante que a imagem mantenha a proporção */
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const RightTextBox = styled.div`
+  flex: 1;
+  padding: 20px;
+  margin-left: 30px;
+  text-align: left;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  border: 2px solid black;
 
   p {
     font-size: 1.1rem;
@@ -103,40 +184,21 @@ const TextSection = styled.div`
     margin-bottom: 15px;
   }
 
-  // Media query para ajuste em telas menores
   @media (max-width: 768px) {
-    padding-right: 0;
-    p {
-      font-size: 1rem;
-    }
+    margin-left: 0;
   }
 `;
 
-const ImagesWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  
-  // Media query para ajuste em telas menores
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 20px;
-  }
-`;
+const FooterText = styled.div`
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  border: 2px solid black;
 
-const ImageSection = styled.div`
-  width: 48%;
-
-  img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  // Media query para ajustar a imagem em telas menores
-  @media (max-width: 768px) {
-    width: 100%;
-    margin-top: 20px; 
-  // Adiciona um espaçamento em cima para telas menores
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
   }
 `;
 
@@ -145,12 +207,15 @@ const SaibaMaisSection = styled.div`
   text-align: center;
 
   a {
-    color: #b36732;
+    color: white;
+    background-color: #b36732;
     font-size: 1.2rem;
-    text-decoration: none;
+    text-decoration: none; /* Remover a linha sublinhada */
+    padding: 10px 20px;
+    border-radius: 5px;
 
     &:hover {
-      text-decoration: underline;
+      background-color: #a65428; /* Alteração de cor ao passar o mouse */
     }
   }
 `;

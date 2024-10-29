@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react';  
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function OQueFazemos() {
   return (
@@ -14,16 +15,20 @@ function OQueFazemos() {
         </ImageSection>
 
         <TextSection>
-          <p>Descubra como estamos transformando vidas e comunidades - Venha conhecer o que fazemos!</p>
-          <p>No PROTEGE, desenvolvemos projetos focados na melhoria das condições de vida em famílias substitutas. Nossa abordagem inclui o desenvolvimento de atividades produtivas, como a criação de coelhos Cui, tanto para consumo interno quanto para geração de renda. Além de fornecerem alimentos nutritivos, estes coelhos ajudam a garantir que os recursos sejam reinvestidos na manutenção e melhoria do abrigo.</p>
-          <p>Outro destaque do projeto é o investimento em plantações de alimentos para fornecer refeições saudáveis e frescas para crianças e adolescentes. As plantações são geridas de forma colaborativa, ensinando às crianças o valor de trabalhar com a terra e de cuidar do ambiente, ao mesmo tempo que fortalecem o abastecimento doméstico.</p>
+          <p>No PROTEGE enfrentamos o grande desafio de operar sem o apoio governamental devido à nova lei na Bolívia, que impede o auxílio direto às instituições. Mas, com a sua ajuda, podemos mudar essa realidade. Desenvolvemos atividades produtivas sustentáveis, como a criação de coelhos da raça Cui, que proporciona alimentos nutritivos e gera renda, e plantações que garantem refeições frescas todos os dias. Essas iniciativas não só sustentam o abrigo, mas também ensinam aos jovens habilidades valiosas para a vida, preparando-os para um futuro mais digno e independente.</p> 
+
+          <p>Entretanto, todo esse trabalho só pode continuar com o seu apoio Para que essas crianças possam crescer em um ambiente de carinho, proteção e oportunidades, precisamos da sua ajuda. Você pode ser a chave para garantir que essas crianças não apenas sobrevivam, mas floresçam — que elas tenham a chance de sonhar, brincar, aprender e construir um futuro melhor. </p>
+
+          <p> </p>Nada disso será possível sem você!
+          Ajude-nos a garantir um futuro de esperança e dignidade para cada uma dessas crianças. 
+          Juntos, podemos transformar a vidas dessas crianças!
         </TextSection>
       </Content>
 
       <SaibaMaisSection>
-        <a href="#">Saiba mais</a>
-                {/* quando for criado a nova pagina será direcionado a ela ex:(#OQueFazemos) */}
-
+        <Link to="/oque-fazemos-sb">
+          <SaibaMaisButton>Saiba mais</SaibaMaisButton>
+        </Link>
       </SaibaMaisSection>
     </Container>
   );
@@ -31,9 +36,8 @@ function OQueFazemos() {
 
 export default OQueFazemos;
 
-  // Estilos com media queries para responsividade
+// Estilos com media queries para responsividade
 const Container = styled.div`
-
   border-radius: 10px;
   padding: 20px;
   margin-top: 40px;
@@ -59,7 +63,6 @@ const Content = styled.div`
   gap: 20px;
   margin-top: 20px;
 
-  // Media query para ajustar em telas menores
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
@@ -67,19 +70,19 @@ const Content = styled.div`
 `;
 
 const TextSection = styled.div`
-text-align: left;
+  text-align: left;
   flex: 1;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
   border: 2px solid black;
+
   p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 15px;
   }
 
-  // Media query para ajustar o texto em telas menores
   @media (max-width: 768px) {
     padding-left: 0;
     p {
@@ -96,25 +99,28 @@ const ImageSection = styled.div`
     border-radius: 10px;
   }
 
- // Media query para ajustar a imagem em telas menores
   @media (max-width: 768px) {
     width: 100%;
-    margin-bottom: 20px; 
- // Adiciona um espaço embaixo para imagens empilhadas
+    margin-bottom: 20px;
   }
 `;
 
 const SaibaMaisSection = styled.div`
   margin-top: 20px;
   text-align: center;
+`;
 
-  a {
-    color: #b36732;
-    font-weight: bold;
-    text-decoration: none;
+const SaibaMaisButton = styled.button`
+  color: white;
+  background-color: #b36732;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    background-color: #a35e2d;
   }
 `;
