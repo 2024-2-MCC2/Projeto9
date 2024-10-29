@@ -6,15 +6,18 @@ const Background = () => {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '100vh',
-    width: '100vw',
     position: 'fixed',
     top: 0,
     left: 0,
-    zIndex: -1
+    width: '100vw',
+    height: '100vh',
+    zIndex: -1,
   };
 
   return <div style={backgroundStyle}></div>;
 };
 
-export default Background;  
+export default Background;
+
+
+

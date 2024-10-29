@@ -23,7 +23,7 @@ function SecaoAjuda() {
             Ser um voluntário no projeto PROTEGE, você não só muda vidas, mas também investe no futuro de crianças
             que necessitam do seu apoio para alcançar um novo começo para uma vida melhor!
           </p>
-          <BotaoAjuda as={Link} to="/donation">Seja um Voluntário</BotaoAjuda> {/* Botão para a página de doação */}
+          <BotaoAjuda as={Link} to="/voluntariado">Seja um Voluntário</BotaoAjuda> {/* Botão para a página de doação */}
         </CaixaAjuda>
       </WrapperDescricao>
     </ContainerSecao>

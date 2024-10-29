@@ -18,12 +18,17 @@ function TelaPrincipal() {
         </CarouselContainer>
         {/* Botões principais */}
         <ButtonsContainer>
-          <BotaoAjuda as="a" href="#Quem-Somos">Quem Somos</BotaoAjuda> {/* Sem redirecionamento */}
+          <BotaoAjuda as="a" href="#Quem-Somos">Quem Somos</BotaoAjuda>
           <BotaoAjuda as={Link} to="/donation">Doe Agora</BotaoAjuda> {/* Redirecionamento para a página de doação */}
           <BotaoAjuda as="a" href="#oque-fazemos">O que Fazemos</BotaoAjuda> {/* Rolagem suave para a seção "O que Fazemos" */}
+          <BotaoAjuda as="a" href="#SecaoAjuda">Como Ajudar?</BotaoAjuda> {/* Rolagem suave para a seção "Seção Ajuda */}
         </ButtonsContainer>
+        
         {/* Seção Ajuda */}
+        <SectionWrapper id="SecaoAjuda">
         <SecaoAjuda />
+        </SectionWrapper>
+
         {/* Seção informativa */}
         <SecaoInfo>
           <Carrossel />
@@ -39,6 +44,7 @@ function TelaPrincipal() {
           <QuemSomos />
         </SectionWrapper>
       </MainSection>
+
 
       {/* Rodapé */}
       <Rodape />
