@@ -1,18 +1,116 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import Calendar from '../components/Calendar';
 
-function Localizacao () {
-    return(
-        <Container>
+// Estilização do calendário
+const PageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+`;
+
+const Header = styled.header`
+  background-color: #ff6633;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+`;
+
+const ContentC = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+`;
+
+const Sidebar = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  position: relative; /* Necessário para o posicionamento do texto sobre a imagem */
+`;
+
+const DonateButton = styled.button`
+  padding: 12px 25px; /* Aumenta o tamanho do botão */
+  background-color: #b36732;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px; /* Aumenta o arredondamento */
+  margin-top: 90px;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  & hover {
+    transform: scale(1.1);
+  }
+`;
+
+const ImageWrapper = styled.div`
+  position: relative; /* Para posicionar o texto sobre a imagem */
+`;
+
+const ImagePlaceholder = styled.img`
+  width: 250px;
+  height: 350px;
+`;
+
+
+const OverlayText = styled.div`
+  position: absolute;
+  top: 55%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-55%, -50%); /* Ajusta para centralizar */
+  color: black; /*Cor do texto*/
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center; /* Centraliza o texto */
+`;
+
+const Footer = styled.footer`
+  margin-top: 20px;
+  text-align: center;
+`;
+
+const Panel = styled.div`
+  background-color: #DBA27E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+`;
+
+const LocalizacaoCalendario = () => {
+  return (
+    <PageContainer>
+      <Header>CALENDÁRIO</Header>
+      <ContentC>
+        <Panel>
+          <Calendar />
+        </Panel>
+        <Sidebar>
+          <DonateButton as="a" href="/VocePodeDoar" >O que posso doar?</DonateButton>
+          <ImageWrapper>
+            <ImagePlaceholder src="../images/Calendario.png" alt="Imagem de acompanhe o calendario" />
+            <OverlayText>Acompanhe nosso calendário para ficar por dentro das campanhas destinadas às nossas crianças! 😊</OverlayText>
+          </ImageWrapper>
+        </Sidebar>
+      </ContentC>
+      <Footer>
+      <Container>
             <BarraDeTitulo>
                 <Titulo>Localização</Titulo>
             </BarraDeTitulo>
 
             <Content>
-                <ImageSection>
-                    <img src="/images/OQuefazemos.png" alt="Imagem do projeto" /> {/* Caminho ajustado para a imagem */}
-                </ImageSection>
             </Content>
 
             <TextSection>
@@ -30,9 +128,13 @@ function Localizacao () {
 
 
         </Container>
-    );
-}
+      </Footer>
+    </PageContainer>
+  );
+};
 
+
+//Estilização da localização
 const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -75,12 +177,6 @@ const TextSection = styled.div`
   }
 `;
 
- 
-
-const ImageSection = styled.div`
-  width: 48%;
-`
 
 
-
-export default Localizacao;
+export default LocalizacaoCalendario;

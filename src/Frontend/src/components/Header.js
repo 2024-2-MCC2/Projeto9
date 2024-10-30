@@ -14,14 +14,14 @@ function Header() {
       {/* Logo e botão de menu à esquerda */}
       <LogoSection>
         <Logo src="/images/Logo.png" onClick={handleLogoClick} />
-        <MenuButton onClick={handleLogoClick}>MENU</MenuButton>
+        <MenuButton onClick={handleLogoClick}>Login</MenuButton>
       </LogoSection>
 
       {/* Dropdown para dispositivos móveis */}
       {isMenuOpen && (
         <DropdownMenu>
-          <DropdownItem as={Link} to="/">Tela Principal</DropdownItem>
-          <DropdownItem as={Link} to="/donation">Doar Agora</DropdownItem>
+          <DropdownItem as={Link} to="/login">Login</DropdownItem>
+          <DropdownItem as={Link} to="/alterar-senha">Alterar Senha</DropdownItem>
         </DropdownMenu>
       )}
 
@@ -31,9 +31,9 @@ function Header() {
           <NavLink as={Link} to="/donation">Doa Aqui</NavLink>
           <NavLink as={Link} to="/voluntariado">Voluntariado</NavLink>
           <Link to="/">
-  <ImagemLugar src="/images/SloganPROTEGE.png" alt="Imagem Central" />
+            <ImagemLugar src="/images/SloganPROTEGE.png" alt="Imagem Central" />
           </Link>
-          <NavLink as={Link} to="/localizacao  ">Calendário</NavLink>
+          <NavLink as={Link} to="/localizacao">Calendário</NavLink>
           <NavLink as={Link} to="/nossa-familia">Nossa Família</NavLink>
         </NavLinks>
       </CenterSection>
@@ -87,9 +87,9 @@ const CenterSection = styled.div`
 const NavLinks = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Alterado para space-around */
+  justify-content: space-around;
   width: 100%;
-  max-width: 900px; /* Limita a largura total dos links */
+  max-width: 900px;
 `;
 
 const NavLink = styled(Link)`
@@ -97,19 +97,20 @@ const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 1rem;
   cursor: pointer;
+  transition: transform 0.3s ease;
 
   &:hover {
+    transform: scale(1.2);
     color: #d49058;
   }
 `;
 
 const ImagemLugar = styled.img`
-  width: 150px; /* Define uma largura fixa para a imagem */
+  width: 150px;
   height: auto;
   cursor: pointer;
 `;
 
-// Definições para o dropdown e itens do menu
 const DropdownMenu = styled.div`
   position: absolute;
   top: 60px;

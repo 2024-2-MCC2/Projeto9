@@ -1,4 +1,3 @@
-
 import React from "react";
 import styled from "styled-components";
 
@@ -189,4 +188,3 @@ const Footer = styled.footer`
   padding: 20px 0;
   margin-top: auto; /* Move o rodapé para a parte inferior */
 `;
-

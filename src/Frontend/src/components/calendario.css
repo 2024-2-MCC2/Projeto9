@@ -1,0 +1,75 @@
+/* Estilos para o container principal */
+.calendar-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .calendar-title {
+    color: #b36732;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .calendar-day {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .calendar-period,
+  .calendar-end {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .calendar-period .green,
+  .calendar-end .red {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .donation-info {
+    margin-top: 40px;
+  }
+  
+  .donation-info h2 {
+    color: #b36732;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .location-map img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .donation-details p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  

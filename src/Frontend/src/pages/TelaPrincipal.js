@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Carrossel from '../components/Carrosel';
@@ -21,12 +21,12 @@ function TelaPrincipal() {
           <BotaoAjuda as="a" href="#Quem-Somos">Quem Somos</BotaoAjuda>
           <BotaoAjuda as={Link} to="/donation">Doe Agora</BotaoAjuda> {/* Redirecionamento para a página de doação */}
           <BotaoAjuda as="a" href="#oque-fazemos">O que Fazemos</BotaoAjuda> {/* Rolagem suave para a seção "O que Fazemos" */}
-          <BotaoAjuda as="a" href="#SecaoAjuda">Como Ajudar?</BotaoAjuda> {/* Rolagem suave para a seção "Seção Ajuda */}
+          <BotaoAjuda as="a" href="#SecaoAjuda">Como Ajudar?</BotaoAjuda> {/* Rolagem suave para a seção "Seção Ajuda" */}
         </ButtonsContainer>
         
         {/* Seção Ajuda */}
         <SectionWrapper id="SecaoAjuda">
-        <SecaoAjuda />
+          <SecaoAjuda />
         </SectionWrapper>
 
         {/* Seção informativa */}
@@ -40,11 +40,10 @@ function TelaPrincipal() {
         </SectionWrapper>
 
         {/* Seção "Quem Somos" */}
-        <SectionWrapper id= "Quem-Somos">
+        <SectionWrapper id="Quem-Somos">
           <QuemSomos />
         </SectionWrapper>
       </MainSection>
-
 
       {/* Rodapé */}
       <Rodape />
@@ -58,11 +57,9 @@ export default TelaPrincipal;
 const ContainerTela = styled.div`
   font-family: Arial, sans-serif;
   max-width: 1200px; 
-  /* Ajuste para tela grande */
   margin: 0 auto;
   padding: 20px;
 
-  /* Media query para telas menores */
   @media (max-width: 768px) {
     padding: 10px;
     max-width: 100%;
@@ -73,7 +70,6 @@ const MainSection = styled.div`
   text-align: center;
   padding: 0;
   margin-bottom: 40px;
-
 
   @media (max-width: 768px) {
     padding: 10px 0;
@@ -94,8 +90,7 @@ const Titulo = styled.h1`
 const CarouselContainer = styled.div`
   width: 100%;
   max-width: 1200px;
-  margin: 40px auto; 
-  //auto para nao cortar e ter sua limitação
+  margin: 40px auto;
   margin-bottom: 40px;
 
   @media (max-width: 768px) {
@@ -124,15 +119,18 @@ const BotaoAjuda = styled.button`
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição suave */
+  text-decoration: none; /* Remover a linha sublinhada */
+  display: inline-block; /* Garantir que o botão seja tratado como um bloco */
 
   &:hover {
     background-color: #d49058;
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra aumentada ao passar o mouse */
   }
 
   @media (max-width: 768px) {
     width: 100%; 
-    /* Botões ocupam 100% da largura em telas menores */
     padding: 15px 0;
   }
 `;
@@ -142,7 +140,7 @@ const SecaoInfo = styled.div`
   padding: 50px 20px;
   border-radius: 10px;
   margin-top: 40px;
-  border : 2px solid black;
+  border: 2px solid black;
 
   @media (max-width: 768px) {
     padding: 20px 10px;
