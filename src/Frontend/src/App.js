@@ -9,6 +9,11 @@ import Voluntariado from './pages/Voluntariado';
 import OQueFazemosSB from './pages/OQueFazemosSB';
 import QuemSomosSB from './pages/QuemSomosSB'; 
 import QuemSomos from './components/QuemSomos';
+import Login from './components/Login';
+import AlterarSenha from './components/AlterarSenha';
+import VocePodeDoar from './pages/VocePodeDoar';
+import FacaBem from './components/FacaBem';
+import LocationButton from './components/LocationButton';
 
 function App() {
   return (
@@ -21,8 +26,11 @@ function App() {
         <Route path="/localizacao" element={<Localizacao />} />
         <Route path="/voluntariado" element={<Voluntariado />} />
         <Route path="/oque-fazemos-sb" element={<OQueFazemosSB />} /> 
-        <Route path="/quem-somos" element={<QuemSomos />} /> {/* Adiciona rota para QuemSomos */}
-        <Route path="/quem-somos-detalhes" element={<QuemSomosSB />} /> {/* Adiciona rota para QuemSomosSB */}
+        <Route path="/quem-somos" element={<QuemSomos />} /> 
+        <Route path="/quem-somos-detalhes" element={<QuemSomosSB />} /> 
+        <Route path="/login" element={<Login />} />
+        <Route path="/alterar-senha" element={<AlterarSenha />} />
+        <Route path="/VocePodeDoar" element={<VocePodeDoar />} />
       </Routes>
 
     </div>
