@@ -34,7 +34,7 @@ function Header() {
             <ImagemLugar src="/images/SloganPROTEGE.png" alt="Imagem Central" />
           </Link>
           <NavLink as={Link} to="/localizacao">Calendário</NavLink>
-          <NavLink as={Link} to="/nossa-familia">Nossa Família</NavLink>
+          <NavLink as={Link} to="/Familia">Nossa Família</NavLink>
         </NavLinks>
       </CenterSection>
     </HeaderContainer>
@@ -63,6 +63,7 @@ const LogoSection = styled.div`
 `;
 
 const Logo = styled.img`
+  margin-top: 2px;
   height: 70px;
   width: 60px;
   margin-right: 10px;
@@ -109,9 +110,16 @@ const ImagemLugar = styled.img`
   width: 150px;
   height: auto;
   cursor: pointer;
+  transition: transform 0.3s ease; 
+
+  &:hover {
+    transform: scale(1.5); 
+  }
 `;
 
+
 const DropdownMenu = styled.div`
+  margin-top: 20px;
   position: absolute;
   top: 60px;
   left: 10px;

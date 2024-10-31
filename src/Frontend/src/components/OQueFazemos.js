@@ -119,8 +119,10 @@ const SaibaMaisButton = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona uma transição para o zoom e a cor */
 
   &:hover {
     background-color: #a35e2d;
+    transform: scale(1.1); 
   }
-  `;
+`;

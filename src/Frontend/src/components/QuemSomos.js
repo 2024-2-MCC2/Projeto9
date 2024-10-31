@@ -207,15 +207,19 @@ const SaibaMaisSection = styled.div`
   text-align: center;
 
   a {
+    display: inline-block; //permite que o link se comporte como um bloco que pode ser escalado, sem ele nao vamos poder aumentar o tamanho
     color: white;
     background-color: #b36732;
     font-size: 1.2rem;
-    text-decoration: none; /* Remover a linha sublinhada */
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 
     &:hover {
-      background-color: #a65428; /* Alteração de cor ao passar o mouse */
+      background-color: #a65428;
+      transform: scale(1.1); 
     }
   }
 `;
+

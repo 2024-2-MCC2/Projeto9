@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header'; 
 import TelaPrincipal from './pages/TelaPrincipal';
@@ -14,10 +15,15 @@ import AlterarSenha from './components/AlterarSenha';
 import VocePodeDoar from './pages/VocePodeDoar';
 import FacaBem from './components/FacaBem';
 import LocationButton from './components/LocationButton';
+import DetalhesDEV from './pages/DetalhesDEV';
+import DetalhesIntegrante from './pages/DetalhesIntegrante';
+import DetalhesRepresentante from './pages/DetalhesRepresentante';
+import Familia from './pages/Familia';
+import Rodape from './components/Rodape';
 
 function App() {
   return (
-    <div>
+      <AppContainer>
       <Background />
       <Header /> 
       <Routes>
@@ -31,10 +37,20 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/alterar-senha" element={<AlterarSenha />} />
         <Route path="/VocePodeDoar" element={<VocePodeDoar />} />
+        <Route path="/integrante/:id" element={<DetalhesIntegrante />} />
+       <Route path="/representante/:id" element={<DetalhesRepresentante />} />
+        <Route path="/dev/:id" element={<DetalhesDEV />} />
+        <Route path= "Familia" element={<Familia />} />
+        <Route path= "FacaBem"elemenmt= {<FacaBem />} />        
       </Routes>
+      <Rodape />
 
-    </div>
+      </AppContainer>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div`
+  padding-top: 10%; /* Adiciona espaçamento para o conteúdo não sobrepor o Header */
+`;

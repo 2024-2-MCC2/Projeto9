@@ -12,16 +12,18 @@ function Donate() {
                         Ajudamos as crianças diariamente com itens de higiene pessoal, alimentos, calçados, vestimentas, livros e mesas para que elas possam estudar confortavelmente.
                     </Description>
                     <Description>
-                        Para muitas delas, o dia do aniversário passa sem qualquer celebração, bolo ou presente. Participe organizando festas de aniversário ou doando recursos para podermos proporcionar momentos de alegria e carinho para cada criança no seu dia especial.
+                        Para muitas delas, o dia do aniversário passa sem qualquer celebração, bolo ou presente. 
+                        Participe organizando festas de aniversário ou doando recursos para podermos proporcionar momentos de alegria e carinho para cada criança no seu dia especial.
                     </Description>
                 </TextSection>
 
                 <CenterSection>
                     <Circle>
-                        <DonateText>DOE</DonateText>
+                        <DonateText>Mãos que ajudam, Tranformam corações</DonateText>
                     </Circle>
                     <ButtonContainer>
                         <Button>DOAR</Button>
+                        {/* será adcionado o link para a conta bancaria e depositar o dinheiro aqui  */}
                     </ButtonContainer>
                 </CenterSection>
 
@@ -35,6 +37,12 @@ function Donate() {
 
 export default Donate;
 
+const imagespace = styled.div`
+width: 100%;
+height: 100%
+align-items;
+
+`;
 const Container = styled.div`
     display: flex;
     justify-content: center;
@@ -86,13 +94,14 @@ const CenterSection = styled.div`
 `;
 
 const Circle = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     background-color: #b36732;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 `;
 
 const DonateText = styled.h3`
@@ -115,7 +124,11 @@ const Button = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: #a25626;
+        &:hover {
+    background-color: #a25626;
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra aumentada ao passar o mouse */
+  }
     }
 `;
 

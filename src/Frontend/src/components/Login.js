@@ -1,117 +1,185 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const [username, setUsername] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
-  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
+
+  const handleLoginSubmit = (e, userType) => {
     e.preventDefault();
-    if (username && password) {
-      setMessage('Login realizado com sucesso');
-      // no futuro colocar a linkagem com o MySql aqui (se der) vamos colocar a logica da programação aqui ou criar um js e importar aqui. dps mandar o setMessage...
+    if (!login || !password) {
+      setError('Por favor, preencha todos os campos');
+      setSuccessMessage(''); // Limpa a mensagem de sucesso
     } else {
-      setMessage('Por favor, insira o nome de usuário e a senha');
+      setError('');
+      if (userType === 'admin') {
+        navigate('/admin-dashboard'); // Redireciona para a página do admin
+      } else {
+        setSuccessMessage('Login realizado com sucesso!');
+      }
     }
   };
 
   return (
-    <Container>
+    <PageContainer>
       <Overlay />
-      <FormContainer>
-        <h2>Login</h2>
-        <form onSubmit={handleLogin}>
-          <Label>Usuário</Label>
+      <LoginFormContainer>
+        <Title>Login</Title>
+        {error && <ErrorMessage>{error}</ErrorMessage>}
+        {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
+        <Input
+          type="text"
+          placeholder="Login"
+          value={login}
+          onChange={(e) => setLogin(e.target.value)}
+          error={error && !login}
+        />
+        <PasswordWrapper>
           <Input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-          <Label>Senha</Label>
-          <Input
-            type="password"
+            type={showPassword ? 'text' : 'password'}
+            placeholder="Senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            required
+            error={error && !password}
           />
-          <Button type="submit">Entrar</Button>
-          {message && <Message>{message}</Message>}
-        </form>
-      </FormContainer>
-    </Container>
+          <ToggleButton type="button" onClick={togglePasswordVisibility}>
+            {showPassword ? 'Esconder' : 'Mostrar'}
+          </ToggleButton>
+        </PasswordWrapper>
+        <ButtonGroup>
+          <Button onClick={(e) => handleLoginSubmit(e, 'user')}>Entrar como Usuário</Button>
+          <Button onClick={(e) => handleLoginSubmit(e, 'admin')}>Entrar como Admin</Button>
+        </ButtonGroup>
+        <Link href="/alterar-senha">Esqueceu a senha?</Link>
+        <Link href="#">Fazer cadastro</Link>
+      </LoginFormContainer>
+    </PageContainer>
   );
 }
 
 export default Login;
 
-// local do css e styled 
-
-const Container = styled.div`
+// Estilos com styled-components
+const PageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  overflow: hidden;
-  background: url('/images/BackgroundImage.jpg') center/cover no-repeat; // coloca o background 
 `;
 
 const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); //deixa escuro o fundo 
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo mais escuro */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
 `;
 
-const FormContainer = styled.div`
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const LoginFormContainer = styled.form`
+  background-color: #fff;
   padding: 40px;
-  width: 300px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 30%;
+  width: 100%;
+  z-index: 1;
 `;
 
-const Label = styled.label`
-  margin: 10px 0 5px;
-  font-size: 1rem;
+const Title = styled.h1`
+  text-align: center;
+  margin-bottom: 20px;
   color: #333;
 `;
 
 const Input = styled.input`
-  padding: 10px;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  display: block;
   width: 100%;
-`;
-
-const Button = styled.button`
-  padding: 10px;
-  font-size: 1rem;
-  background-color: #b36732;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-
-  &:hover {
-    background-color: #a25626;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: ${({ error }) => (error ? '2px solid red' : '1px solid #ccc')};
+  border-radius: 5px;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+    border-color: #007bff;
   }
 `;
 
-const Message = styled.p`
-  margin-top: 15px;
+const PasswordWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+`;
+
+const ToggleButton = styled.button`
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+`;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+`;
+
+const Button = styled.button`
+  background-color: #b36732;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background-color: #d49058;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
+  }
+`;
+
+const ErrorMessage = styled.p`
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+`;
+
+const SuccessMessage = styled.p`
   color: green;
-  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+`;
+
+const Link = styled.a`
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;

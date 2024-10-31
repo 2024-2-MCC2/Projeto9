@@ -5,11 +5,8 @@ import ImageGrid from "../components/ImageGrid";
 function VocePodeDoar() {
     return (
         <Container>
-            <h2>VOCÊ PODE DOAR...</h2>
             <DoacoesInfo>
-                <p>
-                    Roupas masculinas, femininas e infantis, calçados, acessórios (bolsas, carteiras, mochilas, cintos, óculos), utensílios domésticos, aparelhos eletrônicos, artigos para decoração, cama, mesa e banho.
-                </p>
+
             </DoacoesInfo>
             <ImageGrid />
         </Container>

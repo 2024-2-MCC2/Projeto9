@@ -94,17 +94,21 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  padding: 10px;
-  font-size: 1rem;
-  background-color: #b36732;
-  color: white;
+   background-color: #b36732;
   border: none;
-  border-radius: 4px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   cursor: pointer;
-  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 
   &:hover {
-    background-color: #a25626;
+    background-color: #d49058;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
   }
 `;
 

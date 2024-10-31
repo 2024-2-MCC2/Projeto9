@@ -1,27 +1,27 @@
 import React from 'react'; 
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Carrossel from '../components/Carrosel';
+import Banner from '../components/Banner';
 import Rodape from '../components/Rodape';
-import OQuefazemos from '../components/OQueFazemos';
+import OQueFazemos from '../components/OQueFazemos';
 import QuemSomos from '../components/QuemSomos';
-import CarouselCriancas from '../components/CarouselCriancas';
 import SecaoAjuda from '../components/SecaoAjuda'
 
 function TelaPrincipal() {
   return (
     <ContainerTela>
       <MainSection>
-        {/* Carrossel */}
-        <CarouselContainer>
-          <CarouselCriancas />
-        </CarouselContainer>
+
+        <BannerContainer>
+          <Banner />
+        </BannerContainer>
+        
         {/* Botões principais */}
         <ButtonsContainer>
           <BotaoAjuda as="a" href="#Quem-Somos">Quem Somos</BotaoAjuda>
-          <BotaoAjuda as={Link} to="/donation">Doe Agora</BotaoAjuda> {/* Redirecionamento para a página de doação */}
-          <BotaoAjuda as="a" href="#oque-fazemos">O que Fazemos</BotaoAjuda> {/* Rolagem suave para a seção "O que Fazemos" */}
-          <BotaoAjuda as="a" href="#SecaoAjuda">Como Ajudar?</BotaoAjuda> {/* Rolagem suave para a seção "Seção Ajuda" */}
+          <BotaoAjuda as={Link} to="/donation">Doe Agora</BotaoAjuda>
+          <BotaoAjuda as="a" href="#oque-fazemos">O que Fazemos</BotaoAjuda>
+          <BotaoAjuda as="a" href="#SecaoAjuda">Como Ajudar?</BotaoAjuda>
         </ButtonsContainer>
         
         {/* Seção Ajuda */}
@@ -31,12 +31,12 @@ function TelaPrincipal() {
 
         {/* Seção informativa */}
         <SecaoInfo>
-          <Carrossel />
+          <OQueFazemos />
         </SecaoInfo>
 
         {/* Seção "O que Fazemos" */}
         <SectionWrapper id="oque-fazemos">
-          <OQuefazemos />
+          <OQueFazemos />
         </SectionWrapper>
 
         {/* Seção "Quem Somos" */}
@@ -44,10 +44,8 @@ function TelaPrincipal() {
           <QuemSomos />
         </SectionWrapper>
       </MainSection>
-
-      {/* Rodapé */}
-      <Rodape />
     </ContainerTela>
+    
   );
 }
 
@@ -76,29 +74,19 @@ const MainSection = styled.div`
   }
 `;
 
-const Titulo = styled.h1`
-  color: #b36732;
-  font-size: 2.5rem; 
-  margin-bottom: 30px;
-
+/* Banner Container para alinhar e definir o espaço do Banner */
+const BannerContainer = styled.div`
+  margin: 20px auto 40px;
+  display: flex;
+  align-items: center;
   @media (max-width: 768px) {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-`;
-
-const CarouselContainer = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto;
-  margin-bottom: 40px;
-
-  @media (max-width: 768px) {
+    height: 200px;
     margin-bottom: 20px;
   }
 `;
 
 const ButtonsContainer = styled.div`
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -119,14 +107,14 @@ const BotaoAjuda = styled.button`
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 5px;
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição suave */
-  text-decoration: none; /* Remover a linha sublinhada */
-  display: inline-block; /* Garantir que o botão seja tratado como um bloco */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 
   &:hover {
     background-color: #d49058;
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra aumentada ao passar o mouse */
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   }
 
   @media (max-width: 768px) {

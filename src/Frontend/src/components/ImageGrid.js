@@ -17,7 +17,6 @@ const DonationPage = () => {
   return (
     <MainContainer>
       <Title>FAÇA O BEM - DOE!</Title>
-      <Subtitle>VOCÊ PODE DOAR...</Subtitle>
      
       <ImageGrid>
         {images.map((image, index) => (
@@ -27,11 +26,10 @@ const DonationPage = () => {
           </GridItem>
         ))}
       </ImageGrid>
-
-      <SmallText>
+      <Info>
         Roupas masculinas, femininas e infantis, calçados, acessórios (bolsas, carteiras, mochilas, cintos, óculos),
         utensílios domésticos, aparelhos eletrônicos, artigos para decoração, cama, mesa e banho.
-      </SmallText>
+      </Info>
 
       <LocationButton />  
     </MainContainer>
@@ -94,10 +92,10 @@ const GridItem = styled.div`
   }
 `;
 
-const SmallText = styled.p`
-  font-size: 1rem;
+const Info = styled.p`
+  font-size: 1.2rem;
   margin-top: 80px;
-  color: #555;
+  color:  black;
   max-width: 80%;
 `;
 
