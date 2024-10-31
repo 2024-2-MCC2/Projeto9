@@ -30,6 +30,10 @@ Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições d
 1. <a href="https://www.figma.com/design/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=0-1&node-type=canvas&t=o9XOw5QIrIc1j9jX-0">Figma</a>
 2.  <a href="https://www.figma.com/proto/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=19-17&node-type=canvas&t=o9XOw5QIrIc1j9jX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=19%3A17&show-proto-sidebar=1">Figma</a>
 
+## Backend
+
+<a href="https://github.com/2024-2-MCC2/Projeto9/blob/main/documentos/Entrega%203/SQL-PROJETO.sql">Banco de Dados - SQL</a>
+
 ## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
