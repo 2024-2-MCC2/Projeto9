@@ -8,7 +8,6 @@ import visa from '../Images/Mastercard.png';
 import mastercard from '../Images/Visa.png';
 import elo from '../Images/Elo.png';
 
-
 function Rodape() {
   return (
     <FooterContainer>
@@ -27,7 +26,7 @@ function Rodape() {
             <li><a href="#">2024 | Todos os direitos reservados. </a></li>
           </ul>
         </LinksSection>
-{/* a section de links terá como intuito linkar a diversas paginas ou blocos que expliquem o que está escrito no "link" */}
+
         <LinksSection>
           <h4>Ajuda</h4>
           <ul>
@@ -51,13 +50,6 @@ function Rodape() {
           </SocialMedia>
         </LinksSection>
       </FooterLinks>
-
-      <LinksSection>
-        <h4>Início</h4>
-        <ul>
-          <li><a href="#">Voltar para o Início</a></li>
-        </ul>
-      </LinksSection>
 
       <Metas>
         <h4>Metas Alinhadas aos Objetivos de Desenvolvimento Sustentável da ONU</h4>
@@ -92,7 +84,6 @@ function Rodape() {
           <img src={elo} alt="Elo" />
         </OndeDoar>
         
-
         <Agradecimentos>
           <p>
             Agradecemos a todo o apoio durante a execução do Projeto, e a você que de alguma forma está contribuindo
@@ -109,15 +100,18 @@ function Rodape() {
   );
 }
 
-
 export default Rodape;
 
-
+// Estilos com Styled Components
 const FooterContainer = styled.footer`
-  padding: 20px;
+  padding: 30px 60px;
   background-color: #e88e4e;
   color: #333;
   font-family: Arial, sans-serif;
+  border-radius: 20px; /* Bordas arredondadas */
+  max-width: 1200px; /* Largura máxima */
+  margin: 20px auto; /* Centraliza e dá uma margem ao footer */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 `;
 
 const FooterLinks = styled.div`
@@ -205,9 +199,6 @@ const Icon = styled.div`
   }
 `;
 
-
-
-
 const FooterBottom = styled.div`
   display: flex;
   justify-content: space-between;
@@ -244,21 +235,4 @@ const Agradecimentos = styled.div`
   p {
     margin: 20px 0; 
   }
-`;
-
-const InicioContainer = styled.div`
-  margin-top: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-
-  a {
-    text-decoration: none;
-    color: #007BFF; 
-    font-weight: bold;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`;
+  `;
