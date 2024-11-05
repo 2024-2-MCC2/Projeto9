@@ -8,7 +8,7 @@
 
 ## Grupo 9
 
-## Integrantes: <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline Batista Silva</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Roberto Jordan Soeiro</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah Guimarães Euripedes De Paula</a>
+## Integrantes: <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline Batista Silva</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Roberto Jordan Morales</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Da Silva Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah Guimarães Euripedes De Paula</a>
 
 ## Professores Orientadores: <a href="https://github.com/2024-2-MCC2/Projeto9">David de Oliveira Lemes</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Francisco de Souza Escobaro</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Katia Milani Lara Bossi</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Renata Muniz do Nascimento</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Victor Rosetti Quiroz</a>
 
@@ -30,6 +30,10 @@ Nosso projeto ajuda jovens e crianças a ter um futuro melhor, com condições d
 1. <a href="https://www.figma.com/design/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=0-1&node-type=canvas&t=o9XOw5QIrIc1j9jX-0">Figma</a>
 2.  <a href="https://www.figma.com/proto/RhDMlow23m16Qbeenwa8qA/Site-Projeto---Organiza%C3%A7%C3%A3o-PROTEGE?node-id=19-17&node-type=canvas&t=o9XOw5QIrIc1j9jX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=19%3A17&show-proto-sidebar=1">Figma</a>
 
+## Backend
+
+<a href="https://github.com/2024-2-MCC2/Projeto9/blob/main/documentos/Entrega%203/SQL-PROJETO.sql">Banco de Dados - SQL</a>
+
 ## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
@@ -46,7 +50,7 @@ Coloque código do prompt de comnando se for necessário
 
 ## 📋 Licença/License
 
- <a href="https://github.com/2024-2-MCC2/Projeto9">Grupo - 9</a> by <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Soares</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah</a> is lincensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a>
+ <a href="https://github.com/2024-2-MCC2/Projeto9">Grupo - 9</a> by <a href="https://www.linkedin.com/in/hellen-silva-87611b1b5">Hellen Caroline</a>, <a href="https://www.linkedin.com/in/nicolas-morales-ti/">Nicolas Morales</a>, <a href="https://github.com/2024-2-MCC2/Projeto9">Nicolas Soeiro</a>, <a href="https://www.linkedin.com/in/nicolly-silva-soares-10b627171">Nicolly Soares</a>, <a href="https://www.linkedin.com/in/stephany-aliyah-4a2589321">Stephany Aliyah</a> is lincensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a>
 
 
 ## 🎓 Referências
