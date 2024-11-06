@@ -27,21 +27,28 @@ const frases = [
 function Carrossel() {
   const [indiceAtual, setIndiceAtual] = useState(0);
 
-  // Função que muda o slide automaticamente a cada 6 segundos
   useEffect(() => {
     const intervalo = setInterval(() => {
-      setIndiceAtual((indiceAtual + 1) % frases.length);  // Muda para o próximo slide, e reinicia no primeiro ao chegar no final
-    }, 6000);  // Intervalo de 6 segundos
+      setIndiceAtual((indiceAtual + 1) % frases.length);
+    }, 6000);
 
-    return () => clearInterval(intervalo); // Limpa o intervalo quando o componente sai de cena, evitando bugs
-  }, [indiceAtual]);  // Atualiza o efeito toda vez que o índice mudar
+    return () => clearInterval(intervalo);
+  }, [indiceAtual]);
 
   return (
     <div style={estiloCarrossel}>
       <div style={container}>
         <div style={estiloTexto}>
           <h3 style={estiloTitulo}>{frases[indiceAtual].titulo}</h3>  
-          <p>{frases[indiceAtual].descricao}</p> 
+          <p style={estiloDescricao}>
+            {frases[indiceAtual].descricao.split('. ').map((sentence, index) => (
+              <span key={index}>
+                {sentence.trim()}
+                {index < frases[indiceAtual].descricao.split('. ').length - 1 ? '.' : ''} {/* Adiciona ponto final apenas entre as frases */}
+                <br /><br />
+              </span>
+            ))}
+          </p>
         </div>
 
         <div style={estiloImagemContainer}>
@@ -57,46 +64,53 @@ export default Carrossel;
 // Estilos para o Carrossel
 
 const estiloCarrossel = {
-  textAlign: 'center', 
-  padding: '30px',  
-  borderRadius: '90px', 
-   // Deixa os cantos do carrossel arredondados
-  margin: '20px 0'  
-  // Margem de 20px acima e abaixo
+  textAlign: 'center',
+  padding: '30px',
+  borderRadius: '10px',
+  margin: '20px 0',
+  backgroundColor: 'white',
+  boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.35)',
+  fontFamily: 'Roboto, sans-serif',
 };
 
 const estiloImagem = {
-  width: '100%', 
-  height: '200px',  
-  objectFit: 'contain',  
-  borderRadius: '10px' 
+  width: '100%',
+  height: '200px',
+  objectFit: 'contain',
+  borderRadius: '10px'
 };
 
 const container = {
-  display: 'flex',  
-  alignItems: 'center', 
-  justifyContent: 'space-between',  
-  // Espaço entre o texto e a imagem
-  gap: '20px', 
-  // Espaço de 20px entre o texto e a imagem
-  padding: '20px',  
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  gap: '20px',
+  padding: '20px',
 };
 
 const estiloTitulo = {
-  fontSize: '2rem',  
-  fontWeight: 'bold', 
-  marginBottom: '10px',  
+  fontSize: '2rem',
+  fontWeight: 'bold',
+  marginBottom: '10px',
+  fontFamily: 'Roboto, sans-serif',
 };
 
 const estiloTexto = {
-  flex: 1, 
-  textAlign: 'left',  
-  fontSize: '1.5rem',  
-  fontWeight: 'normal',  
-  marginBottom: '10px',  
+  flex: 1,
+  textAlign: 'left',
+  fontSize: '1.5rem',
+  fontWeight: 'normal',
+  marginBottom: '10px',
+  lineHeight: '1.3',
+  fontFamily: 'Roboto, sans-serif',
 };
 
+const estiloDescricao = {
+  fontFamily: 'Roboto, sans-serif',
+  lineHeight: '1.6',
+};
+  
 const estiloImagemContainer = {
-  flex: 1, 
-  textAlign: 'right',  
+  flex: 1,
+  textAlign: 'right',
 };

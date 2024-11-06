@@ -9,9 +9,9 @@ function DetalhesIntegrante() {
 
   useEffect(() => {
     const mockData = [
-      { id: '1', src: "/path/to/image1.jpg", title: "Nome 1", description: "Detalhes sobre o Cargo 1" },
-      { id: '2', src: "/path/to/image2.jpg", title: "Nome 2", description: "Detalhes sobre o Cargo 2" },
-      { id: '3', src: "/path/to/image3.jpg", title: "Nome 3", description: "Detalhes sobre o Cargo 3" },
+      { id: '1', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", title: "Nome 1", description: "Detalhes sobre o Cargo 1" },
+      { id: '2', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", title: "Nome 2", description: "Detalhes sobre o Cargo 2" },
+      { id: '3', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", title: "Nome 3", description: "Detalhes sobre o Cargo 3" },
       // Adicione mais integrantes aqui
     ];
 

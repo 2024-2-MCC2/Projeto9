@@ -13,7 +13,7 @@ function Header() {
     <HeaderContainer>
       {/* Logo e botão de menu à esquerda */}
       <LogoSection>
-        <Logo src="/images/Logo.png" onClick={handleLogoClick} />
+        <Logo src="/images/LogoPROTEGE.png" onClick={handleLogoClick} />
         <MenuButton onClick={handleLogoClick}>Login</MenuButton>
       </LogoSection>
 
@@ -54,6 +54,7 @@ const HeaderContainer = styled.div`
   width: 100vw;
   z-index: 1000;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const LogoSection = styled.div`
@@ -63,11 +64,15 @@ const LogoSection = styled.div`
 `;
 
 const Logo = styled.img`
-  margin-top: 2px;
-  height: 70px;
-  width: 60px;
+  height: 90px;  /* Aumentando a altura da imagem */
+  width: 80px;   /* Aumentando a largura da imagem */
   margin-right: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+
+  &:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+  }
 `;
 
 const MenuButton = styled.button`
@@ -75,7 +80,14 @@ const MenuButton = styled.button`
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #d49058;
+  }
 `;
 
 const CenterSection = styled.div`
@@ -96,7 +108,8 @@ const NavLinks = styled.div`
 const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease;
 
@@ -107,7 +120,7 @@ const NavLink = styled(Link)`
 `;
 
 const ImagemLugar = styled.img`
-  width: 150px;
+  width: 200px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease; 
@@ -116,7 +129,6 @@ const ImagemLugar = styled.img`
     transform: scale(1.5); 
   }
 `;
-
 
 const DropdownMenu = styled.div`
   margin-top: 20px;
@@ -132,12 +144,16 @@ const DropdownMenu = styled.div`
 
 const DropdownItem = styled(Link)`
   display: block;
-  padding: 10px;
+  padding: 15px; /* Aumenta o padding para mais área clicável */
   text-align: left;
   color: white;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+  transition: transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {
     background-color: #d49058;
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
   }
 `;

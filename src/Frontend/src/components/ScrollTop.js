@@ -1,3 +1,4 @@
+// ScrollToTop.js
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -5,10 +6,21 @@ function ScrollToTop() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 150); // Rola para o topo da p·gina
-  }, [location]); // Sempre que a localizaÁ„o mudar (ou seja, a rota mudar)
+    // Verifica se a rota atual √© uma p√°gina de detalhes espec√≠fica (dev, integrante, ou representante)
+    if (
+      location.pathname.includes('/dev/') ||
+      location.pathname.includes('/integrante/') ||
+      location.pathname.includes('/representante/')
+    ) {
+      // Para rotas de detalhes, role para o topo absoluto
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Para outras p√°ginas, aplique o offset de 150 pixels
+      window.scrollTo({ top: 150, behavior: 'smooth' });
+    }
+  }, [location]);
 
-  return null; // N„o precisa renderizar nada
+  return null;
 }
 
 export default ScrollToTop;

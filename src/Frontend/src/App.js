@@ -39,10 +39,13 @@ function App() {
         <Route path="/alterar-senha" element={<AlterarSenha />} />
         <Route path="/VocePodeDoar" element={<VocePodeDoar />} />
         <Route path="/integrante/:id" element={<DetalhesIntegrante />} />
+       <Route path="/representante/:id" element={<DetalhesIntegrante />} />
        <Route path="/representante/:id" element={<DetalhesRepresentante />} />
+       <Route path="/representante/:id" element={<DetalhesDEV />} />
         <Route path="/dev/:id" element={<DetalhesDEV />} />
         <Route path= "Familia" element={<Familia />} />
-        <Route path= "FacaBem"elemenmt= {<FacaBem />} />        
+        <Route path= "FacaBem"elemenmt= {<FacaBem />} />
+
       </Routes>
       <Rodape />
 

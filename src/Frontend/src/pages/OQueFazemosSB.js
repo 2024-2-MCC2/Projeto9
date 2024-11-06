@@ -19,7 +19,7 @@ function OQueFazemos() {
               Queremos promover a autossustentabilidade, onde nosso lar possa gerar seus próprios recursos, minimizando a dependência de doações externas, e para tornar nosso projeto o mais autossustentável possível, e reduzir ao máximo os custos, criamos atividades produtivas que gerem renda, como uma criação de granja de galinhas e coelhos, criação de vacas para consumo próprio e comercialização, e oferta de empregos para jovens que deixam o lar aos 18 anos, além de voluntários para trabalhar em nossa instituição. Focamos na geração de recursos próprios, plantando nossos legumes, verduras e frutas para consumo próprio e comercialização, já que não recebemos recursos do Estado, por serem muitas crianças, jovens e adultos em situação de vulnerabilidade que o Estado precisa cuidar. Mas tudo só será possível com a sua ajuda, pois precisamos de recursos financeiros para iniciar nossa oficina e dar início a esse planejamento de autossustentabilidade.
             </p>
             <p>
-              É comum as crianças chegarem em nosso abrigo cheios de traumas, normalmente são crianças que vivem nas ruas, e que estão subnutridas, pois não se alimentam, não tem agasalhos e muitas vezes não tem sapatos ou chinelos, elas chegam descalças em nosso abrigo. E para fornecer o básico de alimentação, roupas e sapatos, precisamos de sua ajuda.
+              É comum as crianças chegarem em nosso abrigo cheias de traumas, normalmente são crianças que vivem nas ruas, e que estão subnutridas, pois não se alimentam, não têm agasalhos e muitas vezes não têm sapatos ou chinelos, elas chegam descalças em nosso abrigo. E para fornecer o básico de alimentação, roupas e sapatos, precisamos de sua ajuda.
             </p>
           </TextSection>
         </ContentSection>
@@ -30,9 +30,6 @@ function OQueFazemos() {
           </ImageSection>
           <TextSection>
             <h3>Plantação</h3>
-            <p>
-              É comum as crianças chegarem em nosso abrigo cheios de traumas, normalmente são crianças que vivem nas ruas, e que estão subnutridas, pois não se alimentam, não tem agasalhos e muitas vezes não tem sapatos ou chinelos, elas chegam descalças em nosso abrigo. E para fornecer o básico de alimentação, roupas e sapatos, precisamos de sua ajuda.
-            </p>
             <p>
               Além de garantir a alimentação, as plantações também desempenham um papel educativo crucial. Ensinamos aos jovens todas as etapas do processo agrícola, desde a preparação do solo até a colheita, passando por técnicas de cultivo sustentáveis que respeitam e preservam o meio ambiente. Dessa forma, eles aprendem não apenas a produzir seu próprio alimento, mas também a valorizar a importância da sustentabilidade e da conexão com a natureza.
             </p>
@@ -72,27 +69,25 @@ export default OQueFazemos;
 // Styled Components
 const Container = styled.div`
   width: 100%;
-  max-width: 12000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 `;
 
 const Header = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: none; 
   padding: 0px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 `;
 
 const Title = styled.h1`
-  font-size: 89px;
-  color: #b36732; 
+  font-size: 5rem;
+  color: #b36732;
   text-transform: uppercase;
-  margin-top: 200px; 
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Georgia", serif;
   text-align: center;
   width: 100%;
 `;
@@ -100,45 +95,48 @@ const Title = styled.h1`
 const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 `;
 
 const ContentSection = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: row; /* Coloca imagem à esquerda do texto */
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
   border-radius: 10px;
+  gap: 20px;
 `;
 
 const ImageSection = styled.div`
-  flex: 30;
+  width: 250px;
   text-align: center;
 
   img {
-    width: 300px; /* Largura fixa */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 150px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 `;
 
 const TextSection = styled.div`
-  flex: 100;
-  margin-left: 50px;
-  background-color: #f5a25d; 
-  padding: 30px;
+  flex: 1;
+  max-width: 900px; /* Aumentando a largura máxima */
+  background-color: #f5a25d;
+  padding: 20px;
   border-radius: 20px;
 
   h3 {
     font-size: 2.2rem;
-    color: #000; 
+    color: #000;
     margin-bottom: 15px;
+    font-family: Roboto, sans-serif;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
-    color: #000000; 
+    color: #000000;
     margin-bottom: 15px;
     font-family: Roboto, sans-serif;
   }

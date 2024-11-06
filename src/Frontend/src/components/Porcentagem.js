@@ -18,20 +18,21 @@ const PercentageSection = styled.div`
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
-    border: 2px solid black;
     border-radius: 10px;
-
+    padding: 30px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra preta */
+    font-family: 'Roboto', sans-serif;
+    max-width: 250px; /* Definindo uma largura máxima para o bloco */
 `;
 
 const Percentage = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Aumentando o tamanho da fonte */
     margin-bottom: 15px;
-    line-height: 1.5;
+    line-height: 1.6; /* Ajuste de espaçamento entre linhas */
     text-align: center;
-    align-items: flex-start;
 
     strong {
-        font-size: 1.4rem;
+        font-size: 1.6rem; /* Aumentando o tamanho da porcentagem */
         color: #b36732; /* Cor da porcentagem para destaque */
     }
 `;

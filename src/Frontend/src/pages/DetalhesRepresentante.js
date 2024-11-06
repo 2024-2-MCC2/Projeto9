@@ -10,7 +10,7 @@ function DetalhesRepresentante() {
 
   useEffect(() => {
     const representantesData = [
-      { id: '1', src: "/path/to/image1.jpg", title: "Nome Representante 1", description: "Detalhes sobre o Cargo Representante 1" },
+      { id: '1', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", title: "Nome Representante 1", description: "Detalhes sobre o Cargo Representante 1" },
       // Adicione mais representantes aqui
     ];
 

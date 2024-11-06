@@ -3,20 +3,21 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Cards from "../components/Cards";
 import Header from "../components/Header";
+import ScrollToTop from "../components/ScrollTop";
 
 function Familia() {
   const navigate = useNavigate();
   
   const integrantes = [
-    { id: '1', src: "/path/to/image1.jpg", alt: 'Integrante 1', title: "Nome 1", description: "Cargo 1" },
-    { id: '2', src: "/path/to/image2.jpg", alt: 'Integrante 2', title: "Nome 2", description: "Cargo 2" },
-    { id: '3', src: "/path/to/image3.jpg", alt: 'Integrante 3', title: "Nome 3", description: "Cargo 3" },
+    { id: '1', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", alt: 'Integrante 1', title: "Nome 1", description: "Cargo 1" },
+    { id: '2', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", alt: 'Integrante 2', title: "Nome 2", description: "Cargo 2" },
+    { id: '3', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", alt: 'Integrante 3', title: "Nome 3", description: "Cargo 3" },
   ];
 
   const representantes = [
-    { id: '1', src: "/path/to/image1.jpg", alt: 'Representante 1', title: "Nome 4", description: "Cargo 4" },
-    { id: '2', src: "/path/to/image2.jpg", alt: 'Representante 2', title: "Nome 5", description: "Cargo 5" },
-    { id: '3', src: "/path/to/image3.jpg", alt: 'Representante 3', title: "Nome 6", description: "Cargo 6" },
+    { id: '1', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", alt: 'Representante 1', title: "Nome 4", description: "Cargo 4" },
+    { id: '2', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", alt: 'Representante 2', title: "Nome 5", description: "Cargo 5" },
+    { id: '3', src: "https://i.postimg.cc/5N4VwhMc/SemFoto.png", alt: 'Representante 3', title: "Nome 6", description: "Cargo 6" },
   ];
 
   const DEVs = [
@@ -31,6 +32,7 @@ function Familia() {
   return (
     <FamiliaContainer>
       <Header />
+      <ScrollToTop />
       <Overlay />
       <Content>
         <Cards title="Integrantes" characters={integrantes} navigate={navigate} basePath="/integrante" />

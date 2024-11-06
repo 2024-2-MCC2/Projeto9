@@ -14,7 +14,7 @@ function SecaoAjuda() {
             Com a sua doação, você estará apoiando não somente um projeto, mas transformando a vida dos jovens,
             oferecendo a esperança e chance de um futuro cheio de oportunidades para as crianças que precisam de um novo começo!
           </p>
-          <BotaoAjuda as={Link} to="/donation" >Doe Agora</BotaoAjuda> {/* Botão para a página de doação */}
+          <BotaoAjuda as={Link} to="/donation">Doe Agora</BotaoAjuda> {/* Botão para a página de doação */}
         </CaixaAjuda>
 
         <CaixaAjuda> {/* Caixa da direita para Voluntariado */} 
@@ -52,7 +52,7 @@ const WrapperDescricao = styled.div`
   margin-bottom: 40px;
   font-family: Roboto, sans-serif;
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 `;
 
 const CaixaAjuda = styled.div`
@@ -77,7 +77,7 @@ const BotaoAjuda = styled.button`
   border: none;
   color: white;
   padding: 15px 30px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 20px;
