@@ -97,7 +97,7 @@ const LocalizacaoCalendario = () => {
           <Calendar />
         </Panel>
         <Sidebar>
-          <DonateButton as="a" href="/VocePodeDoar" >O que posso doar?</DonateButton>
+          <DonateButton as="a" href="voce-pode-doar" >O que posso doar?</DonateButton>
           <ImageWrapper>
             <ImagePlaceholder src="../images/Calendario.png" alt="Imagem de acompanhe o calendario" />
             <OverlayText>Acompanhe nosso calendário para ficar por dentro das campanhas destinadas às nossas crianças! 😊</OverlayText>

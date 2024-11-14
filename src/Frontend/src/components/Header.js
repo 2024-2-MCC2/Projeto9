@@ -21,7 +21,7 @@ function Header() {
       {isMenuOpen && (
         <DropdownMenu>
           <DropdownItem as={Link} to="/login">Login</DropdownItem>
-          <DropdownItem as={Link} to="/alterar-senha">Alterar Senha</DropdownItem>
+          <DropdownItem as={Link} to="/alterar-cadastro">Alterar Cadastro</DropdownItem>
         </DropdownMenu>
       )}
 

@@ -1,106 +1,85 @@
+// src/pages/Login.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const [showPassword, setShowPassword] = useState(false);
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const navigate = useNavigate();
 
-  const togglePasswordVisibility = () => {
-    setShowPassword((prevShowPassword) => !prevShowPassword);
-  };
-
-  const handleLoginSubmit = (e, userType) => {
+  const handleLoginSubmit = (e) => {
     e.preventDefault();
     if (!login || !password) {
       setError('Por favor, preencha todos os campos');
-      setSuccessMessage(''); // Limpa a mensagem de sucesso
+      setSuccessMessage('');
     } else {
       setError('');
-      if (userType === 'admin') {
-        navigate('/admin-dashboard'); // Redireciona para a página do admin
-      } else {
-        setSuccessMessage('Login realizado com sucesso!');
-      }
+      navigate('/'); // Redireciona para a página principal após o login
+    }
+  };
+
+  const handlePasswordUpdate = (e) => {
+    e.preventDefault();
+    if (!newPassword) {
+      setError('Por favor, insira uma nova senha');
+      setSuccessMessage('');
+    } else {
+      setError('');
+      setSuccessMessage('Senha atualizada com sucesso!');
+      setNewPassword('');
+      // Aqui você adicionará a integração com o backend para atualizar a senha no banco de dados
     }
   };
 
   return (
-    <PageContainer>
-      <Overlay />
-      <LoginFormContainer>
-        <Title>Login</Title>
-        {error && <ErrorMessage>{error}</ErrorMessage>}
-        {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
-        <Input
-          type="text"
-          placeholder="Login"
-          value={login}
-          onChange={(e) => setLogin(e.target.value)}
-          error={error && !login}
-        />
-        <PasswordWrapper>
-          <Input
-            type={showPassword ? 'text' : 'password'}
-            placeholder="Senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            error={error && !password}
-          />
-          <ToggleButton type="button" onClick={togglePasswordVisibility}>
-            {showPassword ? 'Esconder' : 'Mostrar'}
-          </ToggleButton>
-        </PasswordWrapper>
-        <ButtonGroup>
-          <Button onClick={(e) => handleLoginSubmit(e, 'user')}>Entrar como Usuário</Button>
-          <Button onClick={(e) => handleLoginSubmit(e, 'admin')}>Entrar como Admin</Button>
-        </ButtonGroup>
-        <Link href="/alterar-senha">Esqueceu a senha?</Link>
-        <Link href="#">Fazer cadastro</Link>
-      </LoginFormContainer>
-    </PageContainer>
+    <LoginContainer>
+      <h2>Login</h2>
+      {error && <ErrorMessage>{error}</ErrorMessage>}
+      {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
+      <Input
+        type="text"
+        placeholder="Nickname"
+        value={login}
+        onChange={(e) => setLogin(e.target.value)}
+      />
+      <Input
+        type="password"
+        placeholder="Senha"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Button onClick={handleLoginSubmit}>Entrar</Button>
+      <Link onClick={() => navigate('/cadastro')}>Fazer cadastro</Link>
+
+      <Separator />
+      
+      <h3>Alterar Senha</h3>
+      <Input
+        type="password"
+        placeholder="Nova Senha"
+        value={newPassword}
+        onChange={(e) => setNewPassword(e.target.value)}
+      />
+      <Button onClick={handlePasswordUpdate}>Atualizar Senha</Button>
+    </LoginContainer>
   );
 }
 
 export default Login;
 
-// Estilos com styled-components
-const PageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
-`;
-
-const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo mais escuro */
-  z-index: -1; /* Coloca o fundo atrás do conteúdo */
-`;
-
-const LoginFormContainer = styled.form`
+const LoginContainer = styled.div`
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 30%;
+  max-width: 400px;
   width: 100%;
-  z-index: 1;
-`;
-
-const Title = styled.h1`
+  margin: 20px auto;
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
 `;
 
 const Input = styled.input`
@@ -108,38 +87,13 @@ const Input = styled.input`
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
-  border: ${({ error }) => (error ? '2px solid red' : '1px solid #ccc')};
+  border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
   &:focus {
     outline: none;
     border-color: #007bff;
   }
-`;
-
-const PasswordWrapper = styled.div`
-  position: relative;
-  width: 100%;
-  margin-bottom: 10px;
-`;
-
-const ToggleButton = styled.button`
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: #007bff;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 0;
-`;
-
-const ButtonGroup = styled.div`
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
 `;
 
 const Button = styled.button`
@@ -174,12 +128,18 @@ const SuccessMessage = styled.p`
 `;
 
 const Link = styled.a`
-  display: block;
-  text-align: center;
-  margin-top: 10px;
   color: #007bff;
   text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const Separator = styled.hr`
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
 `;

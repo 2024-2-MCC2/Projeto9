@@ -16,14 +16,14 @@ function Rodape() {
           <h4>Institucional</h4>
           <ul>
             <li>
-              <a href="#">Sobre a Organização PROTEGE - "Manos que ayudan, transforman corazones"</a>
+              <a href="/principais-duvidas">Sobre a Organização PROTEGE - "Manos que ayudan, transforman corazones"</a>
             </li>
-            <li><a href="#">Principais dúvidas</a></li>
-            <li><a href="#">Para onde vão as doações arrecadadas?</a></li>
-            <li><a href="#">Onde posso encontrar o comprovante de recebimento que consta a doação feita?</a></li>
-            <li><a href="#">Proteção de Dados</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">2024 | Todos os direitos reservados. </a></li>
+            <li><a href="/principais-duvidas">Principais dúvidas</a></li>
+            <li><a href="/para-onde">Para onde vão as doações arrecadadas?</a></li>
+            <li><a href="/protecao-de-dados">Proteção de Dados</a></li>
+            <li><a href="/politica-privacidade">Política de Privacidade</a></li>
+            <li><a href="/direito-autoral">2024 | Todos os direitos reservados. </a></li>
+
           </ul>
         </LinksSection>
 
@@ -42,11 +42,11 @@ function Rodape() {
           </ul>
           <h4>Siga-nos e nos acompanhe</h4>
           <SocialMedia>
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaGithub /></a>
-            <a href="#"><FaTwitter /></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
           </SocialMedia>
         </LinksSection>
       </FooterLinks>
@@ -85,6 +85,7 @@ function Rodape() {
         </OndeDoar>
         
         <Agradecimentos>
+          <h2>Agradecimentos</h2>
           <p>
             Agradecemos a todo o apoio durante a execução do Projeto, e a você que de alguma forma está contribuindo
             para tornar o sonho das nossas crianças e jovens em realidade.<br />
