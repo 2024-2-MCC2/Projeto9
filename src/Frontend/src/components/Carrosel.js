@@ -5,22 +5,22 @@ const frases = [
   {
     titulo: "Você sabia que essas crianças não têm sapatos para irem à escola?",
     descricao: "Muitas vezes, elas caminham longas distâncias descalças ou com sapatos desgastados. Você pode ajudar doando calçados ou contribuindo para campanhas que garantem a essas crianças o básico para poderem ir à escola com dignidade e segurança.",
-    imagem: "/images/SapatoVermelho.png" 
+    imagem: "https://i.postimg.cc/SsM32LhR/Sapato.png" 
   },
   {
     titulo: "Você sabia que essas crianças sentem medo?",
     descricao: "Elas enfrentam o medo sozinhas, sem apoio emocional adequado. Você pode ajudar a confortá-las.",
-    imagem: "/images/Monstro.png" 
+    imagem: "https://i.postimg.cc/j2Gj64W1/monstro-roso.png" 
   },
   {
     titulo: "Contribua para mudar vidas!",
     descricao: "Com sua doação ou apoio voluntário, você pode transformar a vida de muitas crianças.",
-    imagem: "/images/Donate.png" 
+    imagem: "https://i.postimg.cc/tgxj0ng3/cora-o.png" 
   },
   {
     titulo: "Você sabia que essas crianças não têm a garantia de comer todos os dias?",
     descricao: "A fome é uma realidade constante para muitas dessas crianças. Contribua com alimentos ou apoie nossos projetos de auto sustentabilidade, como a criação de coelhos, para garantir que haja comida suficiente e nutritiva na mesa diariamente.",
-    imagem: "/images/Fome.png" 
+    imagem: "https://i.postimg.cc/t4586dMC/Hamburger.png" 
   }
 ];
 
