@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import api from '../api'; // Instância do Axios
 
 function AlterarCadastro() {
   const [nome, setNome] = useState('');
@@ -9,19 +10,25 @@ function AlterarCadastro() {
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleAlterarCadastro = (e) => {
+  const handleAlterarCadastro = async (e) => {
     e.preventDefault();
     if (novaSenha && novaSenha !== confirmarSenha) {
       setMessage('As senhas não coincidem.');
       return;
     }
 
-    if (senhaAtual) {
+    try {
+      const response = await api.put('/users/update', {
+        nome,
+        email,
+        senhaAtual,
+        novaSenha,
+      });
+      console.log('Cadastro atualizado com sucesso:', response.data);
       setMessage('Cadastro atualizado com sucesso!');
-      // Adicione aqui a lógica de atualização do cadastro no backend
-      // Incluindo verificação da senha atual e atualização dos dados (nome, e-mail, senha)
-    } else {
-      setMessage('Por favor, insira sua senha atual para confirmar.');
+    } catch (err) {
+      console.error('Erro ao atualizar cadastro:', err.response?.data || err.message);
+      setMessage('Erro ao atualizar cadastro. Tente novamente.');
     }
   };
 
@@ -31,34 +38,33 @@ function AlterarCadastro() {
       <FormContainer>
         <h2>Alterar Cadastro</h2>
         <form onSubmit={handleAlterarCadastro}>
-          <Label>Nome</Label>
           <Input
             type="text"
+            placeholder="Nome"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
           />
-          <Label>Email</Label>
           <Input
             type="email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <Label>Senha Atual</Label>
           <Input
             type="password"
+            placeholder="Senha Atual"
             value={senhaAtual}
             onChange={(e) => setSenhaAtual(e.target.value)}
-            required
           />
-          <Label>Nova Senha</Label>
           <Input
             type="password"
+            placeholder="Nova Senha"
             value={novaSenha}
             onChange={(e) => setNovaSenha(e.target.value)}
           />
-          <Label>Confirmar Nova Senha</Label>
           <Input
             type="password"
+            placeholder="Confirmar Nova Senha"
             value={confirmarSenha}
             onChange={(e) => setConfirmarSenha(e.target.value)}
           />
@@ -79,7 +85,7 @@ const PageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  height: 100vh; /* Preenche toda a altura da tela */
   padding: 20px;
 `;
 
@@ -104,12 +110,6 @@ const FormContainer = styled.div`
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1;
-`;
-
-const Label = styled.label`
-  margin: 10px 0 5px;
-  font-size: 1rem;
-  color: #333;
 `;
 
 const Input = styled.input`

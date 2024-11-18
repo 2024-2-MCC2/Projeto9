@@ -1,6 +1,6 @@
-// src/pages/Cadastro.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import api from '../api'; 
 
 function Cadastro() {
   const [nome, setNome] = useState('');
@@ -10,16 +10,34 @@ function Cadastro() {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
-  const handleCadastroSubmit = (e) => {
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleCadastroSubmit = async (e) => {
     e.preventDefault();
+
     if (!nome || !email || !senha || !confirmarSenha) {
-      setError('Por favor, preencha todos os campos');
+      setError('Por favor, preencha todos os campos.');
+    } else if (!validateEmail(email)) {
+      setError('Por favor, insira um email válido.');
     } else if (senha !== confirmarSenha) {
-      setError('As senhas não coincidem');
+      setError('As senhas não coincidem.');
     } else {
       setError('');
-      setSuccessMessage('Cadastro realizado com sucesso!');
-      // Aqui você adicionará a integração com o backend para salvar no banco de dados
+      try {
+        const response = await api.post('/users/register', { nome, email, senha });
+        console.log('Cadastro realizado com sucesso:', response.data);
+        setSuccessMessage('Cadastro realizado com sucesso!');
+        setNome('');
+        setEmail('');
+        setSenha('');
+        setConfirmarSenha('');
+      } catch (err) {
+        console.error('Erro no cadastro:', err.response?.data || err.message);
+        setError('Erro ao realizar o cadastro. Tente novamente.');
+      }
     }
   };
 
@@ -98,7 +116,7 @@ const Button = styled.button`
   &:hover {
     background-color: #d49058;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); 
+    transform: scale(1.05);
   }
 `;
 

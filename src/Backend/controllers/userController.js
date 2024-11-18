@@ -51,3 +51,10 @@ exports.deleteUser = (req, res) => {
     res.status(200).json({ message: 'Usuário deletado com sucesso' });
   });
 };
+
+// para facilitar as pessoas poderem entender onde erraram no processo coloquei os mesmos erros do que nas páginas principais 
+
+// "erro 500 é uma mensagem genérica que indica que o servidor encontrou uma condição inesperada e não foi capaz de atender à solicitação."
+// "erro 404 é um código de status HTTP que indica que o servidor não conseguiu encontrar a página solicitada", neste caso nao acho o usuario.
+// "erro 401" ocorre quando você tenta acessar uma página que requer credenciais de autenticação válidas, mas as atuais não são reconhecidas ou estão ausentes", neste caso as credencias nao batem com o cadastro.
+// "cod 200 é a resposta de status de sucesso que indica que a requisição foi bem sucedida"

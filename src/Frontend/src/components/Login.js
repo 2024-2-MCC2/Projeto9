@@ -1,37 +1,34 @@
-// src/pages/Login.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import api from '../api'; // Instância do Axios
 
 function Login() {
-  const [login, setLogin] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [newPassword, setNewPassword] = useState('');
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const navigate = useNavigate();
 
-  const handleLoginSubmit = (e) => {
+  const handleLoginSubmit = async (e) => {
     e.preventDefault();
-    if (!login || !password) {
-      setError('Por favor, preencha todos os campos');
+    if (!email || !password) {
+      setError('Por favor, preencha todos os campos.');
       setSuccessMessage('');
     } else {
       setError('');
-      navigate('/'); // Redireciona para a página principal após o login
-    }
-  };
-
-  const handlePasswordUpdate = (e) => {
-    e.preventDefault();
-    if (!newPassword) {
-      setError('Por favor, insira uma nova senha');
-      setSuccessMessage('');
-    } else {
-      setError('');
-      setSuccessMessage('Senha atualizada com sucesso!');
-      setNewPassword('');
-      // Aqui você adicionará a integração com o backend para atualizar a senha no banco de dados
+      try {
+        const response = await api.post('/users/login', {
+          email,
+          senha: password,
+        });
+        localStorage.setItem('token', response.data.token); // Salva o token no localStorage
+        setSuccessMessage('Login bem-sucedido!');
+        navigate('/'); // Redireciona para a página principal
+      } catch (err) {
+        setError('Credenciais inválidas. Tente novamente.');
+        console.error('Erro no login:', err.response?.data || err.message);
+      }
     }
   };
 
@@ -41,10 +38,10 @@ function Login() {
       {error && <ErrorMessage>{error}</ErrorMessage>}
       {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
       <Input
-        type="text"
-        placeholder="Nickname"
-        value={login}
-        onChange={(e) => setLogin(e.target.value)}
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
       />
       <Input
         type="password"
@@ -54,17 +51,6 @@ function Login() {
       />
       <Button onClick={handleLoginSubmit}>Entrar</Button>
       <Link onClick={() => navigate('/cadastro')}>Fazer cadastro</Link>
-
-      <Separator />
-      
-      <h3>Alterar Senha</h3>
-      <Input
-        type="password"
-        placeholder="Nova Senha"
-        value={newPassword}
-        onChange={(e) => setNewPassword(e.target.value)}
-      />
-      <Button onClick={handlePasswordUpdate}>Atualizar Senha</Button>
     </LoginContainer>
   );
 }
