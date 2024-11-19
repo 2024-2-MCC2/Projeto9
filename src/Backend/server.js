@@ -18,7 +18,7 @@ db.connect((err) => {
 
 // Middleware
 app.use(cors({ // Configurando CORS para permitir conexão com o frontend
-  origin: 'http://localhost:3000', // Substitua pela URL do frontend em produção
+  origin: 'http://localhost:3000', 
   credentials: true,
 }));
 app.use(bodyParser.json()); // Para requisições no formato JSON

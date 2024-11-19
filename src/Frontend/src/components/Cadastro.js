@@ -7,6 +7,7 @@ function Cadastro() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
+  const [chaveSecreta, setChaveSecreta] = useState(''); // Campo para chave secreta
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
@@ -18,7 +19,7 @@ function Cadastro() {
   const handleCadastroSubmit = async (e) => {
     e.preventDefault();
 
-    if (!nome || !email || !senha || !confirmarSenha) {
+    if (!nome || !email || !senha || !confirmarSenha || !chaveSecreta) {
       setError('Por favor, preencha todos os campos.');
     } else if (!validateEmail(email)) {
       setError('Por favor, insira um email válido.');
@@ -27,13 +28,14 @@ function Cadastro() {
     } else {
       setError('');
       try {
-        const response = await api.post('/users/register', { nome, email, senha });
+        const response = await api.post('/users/register', { nome, email, senha, chave_secreta: chaveSecreta }); // Envia a chave secreta
         console.log('Cadastro realizado com sucesso:', response.data);
         setSuccessMessage('Cadastro realizado com sucesso!');
         setNome('');
         setEmail('');
         setSenha('');
         setConfirmarSenha('');
+        setChaveSecreta(''); // Limpa o campo de chave secreta após o envio
       } catch (err) {
         console.error('Erro no cadastro:', err.response?.data || err.message);
         setError('Erro ao realizar o cadastro. Tente novamente.');
@@ -69,6 +71,12 @@ function Cadastro() {
         placeholder="Confirmar Senha"
         value={confirmarSenha}
         onChange={(e) => setConfirmarSenha(e.target.value)}
+      />
+      <Input
+        type="text"
+        placeholder="Chave Secreta" // Adicionando o campo de chave secreta
+        value={chaveSecreta}
+        onChange={(e) => setChaveSecreta(e.target.value)}
       />
       <Button onClick={handleCadastroSubmit}>Cadastrar</Button>
     </CadastroContainer>

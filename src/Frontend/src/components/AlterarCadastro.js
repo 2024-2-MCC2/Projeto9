@@ -8,6 +8,7 @@ function AlterarCadastro() {
   const [senhaAtual, setSenhaAtual] = useState('');
   const [novaSenha, setNovaSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
+  const [chaveSecreta, setChaveSecreta] = useState(''); // Adicionando o campo de chave secreta
   const [message, setMessage] = useState('');
 
   const handleAlterarCadastro = async (e) => {
@@ -18,11 +19,12 @@ function AlterarCadastro() {
     }
 
     try {
-      const response = await api.put('/users/update', {
+      const response = await api.put('/users/update/' + 1, { // Coloque o ID aqui (ou use um valor dinâmico)
         nome,
         email,
         senhaAtual,
         novaSenha,
+        chave_secreta: chaveSecreta, // Envia a chave secreta
       });
       console.log('Cadastro atualizado com sucesso:', response.data);
       setMessage('Cadastro atualizado com sucesso!');
@@ -67,6 +69,12 @@ function AlterarCadastro() {
             placeholder="Confirmar Nova Senha"
             value={confirmarSenha}
             onChange={(e) => setConfirmarSenha(e.target.value)}
+          />
+          <Input
+            type="text"
+            placeholder="Chave Secreta"
+            value={chaveSecreta}
+            onChange={(e) => setChaveSecreta(e.target.value)}
           />
           <Button type="submit">Alterar Cadastro</Button>
         </form>

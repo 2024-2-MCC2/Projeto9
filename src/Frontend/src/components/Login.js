@@ -6,13 +6,14 @@ import api from '../api'; // Instância do Axios
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [chaveSecreta, setChaveSecreta] = useState(''); // Adicionando chave secreta
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const navigate = useNavigate();
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
-    if (!email || !password) {
+    if (!email || !password || !chaveSecreta) {
       setError('Por favor, preencha todos os campos.');
       setSuccessMessage('');
     } else {
@@ -21,6 +22,7 @@ function Login() {
         const response = await api.post('/users/login', {
           email,
           senha: password,
+          chave_secreta: chaveSecreta, // Envia a chave secreta para o backend
         });
         localStorage.setItem('token', response.data.token); // Salva o token no localStorage
         setSuccessMessage('Login bem-sucedido!');
@@ -48,6 +50,12 @@ function Login() {
         placeholder="Senha"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+      />
+      <Input
+        type="text"
+        placeholder="Chave Secreta" // Campo para chave secreta
+        value={chaveSecreta}
+        onChange={(e) => setChaveSecreta(e.target.value)}
       />
       <Button onClick={handleLoginSubmit}>Entrar</Button>
       <Link onClick={() => navigate('/cadastro')}>Fazer cadastro</Link>
