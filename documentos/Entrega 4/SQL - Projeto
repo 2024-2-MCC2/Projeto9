@@ -1,0 +1,100 @@
+create database projeto;
+use projeto;
+
+create table stock (
+    id_adm int primary key auto_increment,
+    number_toys int not null default 0,
+    number_clothes int not null default 0,
+    number_shoes int not null default 0,
+    last_update datetime default current_timestamp on update current_timestamp
+);
+
+select * from stock;
+
+create table users (
+    id_user INT auto_increment primary key,
+    user_name varchar(50) not null,
+    email varchar(50) not null unique,
+    user_password varchar(50) not null,
+    number_phone varchar(15),
+    address varchar(100),
+    birth_date date,
+    registration_date datetime default current_timestamp,
+    status enum('ativo', 'inativo') not null default 'ativo'
+);
+
+select * from users;
+
+create table donate (
+    id_donate int auto_increment primary key,
+    id_user int,
+    donate_date datetime default current_timestamp,
+    value decimal(10,2) not null,
+    description_donate text,
+    foreign key (id_user) references users (id_user) on delete cascade
+);
+
+select * from donate;
+
+create table donate_items (
+    id_donate_item int auto_increment primary key,
+    id_donate int,
+    item_category enum('toys', 'clothes', 'shoes') not null,
+    quantity int not null,
+    foreign key (id_donate) references donate (id_donate) on delete cascade
+);
+
+select * from donate_items;
+
+create table admins (
+    id_adm int auto_increment primary key,
+    admin_name varchar(50) not null,
+    email varchar(50) not null unique,
+    admin_password varchar(50) not null,
+    role enum('superadmin', 'manager') not null default 'manager'
+);
+
+select * from admins;
+
+create table developers (
+    id_dev int auto_increment primary key,
+    dev_name varchar(100) not null,
+    role varchar(50) not null default 'developer'
+);
+
+select * from developers;
+
+insert into stock (number_toys, number_clothes, number_shoes)
+values (100, 200, 120);
+
+insert into users (user_name, email, user_password, number_phone, address, birth_date)
+values 
+('João Silva', 'joao@gmail.com', 'password123', '123456789', 'Rua A, 123', '1990-05-15'),
+('Maria Oliveira', 'maria@gmail.com', 'maria456', '987654321', 'Rua B, 456', '1985-09-25');
+
+insert into donate (id_user, value, description_donate)
+values 
+(1, 150.00, 'Doação para brinquedos e roupas'),
+(2, 200.00, 'Doação para sapatos e roupas');
+
+insert into donate_items (id_donate, item_category, quantity)
+values
+(1, 'toys', 50),
+(1, 'clothes', 20),
+(2, 'shoes', 30),
+(2, 'clothes', 10);
+
+insert into admins (admin_name, email, admin_password, role)
+values 
+('Admin Master', 'admin@projeto.com', 'admin123', 'superadmin'),
+('Gestor Local', 'manager@projeto.com', 'manager123', 'manager');
+
+insert into developers (dev_name)
+values
+('Hellen Caroline Batista Silva'),
+('Nicolas Roberto Jordan Morales'),
+('Nicolas Soerio'),
+('Nicolly da Silva Soares'),
+('Stephany Aliyah Guimarães Eurípedes de Paula');
+
+select * from developers;
